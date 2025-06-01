@@ -1,0 +1,222 @@
+@media screen and (max-width: 1024px) {
+    .main_visual .swiper-slide {
+        height: 500px;
+    }
+
+    .main_visual .swiper-slide a p {
+        font-size: 42px;
+    }
+
+    .main_visual .swiper-slide a div {
+        font-size: 32px;
+    }
+
+    .skincare {
+        padding-top: 180px;
+        padding-bottom: 90px;
+    }
+
+    .skincare .swiper {
+        width: 100%;
+        height: 798px;
+        gap: 109px;
+        margin-bottom: 0;
+    }
+
+    .skincare .swiper .h3_text {
+        width: 100%;
+    }
+
+    .swiper .h3_text a {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .skincare_left {
+        display: none;
+    }
+
+    .skincare .swiper-slide a {
+        opacity: 1;
+    }
+
+    /* makeup */
+    .makeup {
+        padding: 90px 0;
+        gap: 109px;
+    }
+
+    .makeup_left {
+        display: none;
+    }
+
+    .makeup_right {
+        width: 100%;
+        gap: 24px;
+    }
+
+    .makeupsmall {
+        padding-bottom: 48px;
+    }
+
+    .makeupsmall.no {
+        display: flex;
+    }
+
+    /* video */
+    .video {
+        padding: 90px 0;
+        gap: 109px;
+    }
+
+    .vid_contents .vidboth {
+        gap: 36px;
+    }
+
+    .vid_contents .vid {
+        height: 350px;
+    }
+
+    .vid a ul {
+        font-size: 22px;
+        justify-content: center;
+        opacity: 1;
+    }
+
+    .vid a ul li {
+        bottom: 25%;
+    }
+
+    .store {
+        padding: 90px 0;
+        gap: 109px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .main_visual .swiper-slide a p {
+        font-size: 32px;
+        top: 77%;
+    }
+
+    .main_visual .swiper-slide a div {
+        font-size: 22px;
+    }
+
+    .main_visual .swiper-slide a p {
+        left: 20px;
+    }
+
+    .main_visual .swiper-slide a div {
+        left: 20px;
+    }
+
+    .skincare {
+        padding-top: 120px;
+        padding-bottom: 60px;
+    }
+
+    .skincare .swiper {
+        height: 600px;
+        display: flex;
+        gap: 60px;
+    }
+
+    .skincare .swiper .h3_text {
+        height: 55px;
+    }
+
+    .skincare .swiper-slide {
+        width: 300px;
+    }
+
+    .skincare .swiper-slide a {
+        font-size: 24px;
+        gap: 14px;
+        justify-content: flex-start;
+    }
+
+    .skincare .swiper-slide a .tag {
+        font-size: 16px;
+    }
+
+    .skincare .swiper-slide a img {
+        width: 300px;
+    }
+
+    /* makeup */
+    .makeup {
+        padding: 60px 0;
+        gap: 60px;
+    }
+
+    .makeup_right .tag {
+        font-size: 16px;
+    }
+
+    .makeup_right {
+        width: 100%;
+        /* background: red; */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 60px;
+        padding: 0 20px;
+    }
+
+    .makeup_right .name {
+        font-size: 24px;
+    }
+
+    .makeup_right a ul {
+        gap: 15px;
+    }
+
+    .makeupsmall {
+        padding-bottom: 0;
+    }
+
+    /* video */
+    .video {
+        padding: 65px 0;
+        gap: 60px;
+    }
+
+    .vid_contents {
+        flex-direction: column;
+        gap: 72px;
+    }
+
+    .vid_contents .vidboth {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .vid a ul {
+        font-size: 17px;
+    }
+
+    .vid a ul li {
+        bottom: 31%;
+    }
+
+    .makeup_left {
+        display: none;
+    }
+
+    .store {
+        padding: 65px 0;
+        gap: 60px;
+    }
+
+    .store_slide {
+        padding-left: 65px;
+    }
+
+    .store_top {
+        display: none;
+    }
+}

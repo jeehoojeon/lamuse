@@ -1,0 +1,235 @@
+@charset "utf-8";
+
+/* .inner {
+    width: 100%;
+    padding: 0 175px;
+} */
+
+.store_top {
+    width: 100%;
+    text-align: center;
+    padding: 26px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.store_top .store_title {
+    padding: 22px 0;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+
+.store_top .store_nav {
+    width: 35%;
+    display: flex;
+    padding: 24px 0;
+}
+
+.store_top .store_nav>ul {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.store_top .store_nav>ul>li {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    font-size: 36px;
+    padding: 8px 8px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.store_top .store_nav>ul>li.on {
+    border-bottom: 3px solid var(--main-red);
+}
+
+.store_contents {
+    width: 100%;
+    display: flex;
+    gap: 36px;
+    justify-content: space-between;
+}
+
+.store_filter {
+    width: 376px;
+    height: 860px;
+    /* background: #ccc; */
+    border-left: 1px solid var(--w-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.cosmetic_list {
+    display: none;
+}
+.filter_list ul{
+    display: none;
+}
+
+.filter_list .store_filter_js{
+    display: block;
+}
+
+.store_filter_js {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s linear;
+  padding: 0 0;
+}
+
+.store_filter_js.open {
+  max-height: 500px; /* 충분히 큰 값 */
+  padding: 10px 0;
+}
+
+.store_filter_head .material-symbols-outlined {
+  transition: transform 0.3s ease;
+  transform: rotate(180deg); /* 초기 상태는 180도 회전 */
+}
+
+.store_filter_head.active .material-symbols-outlined {
+  transform: rotate(0deg); /* 열릴 때 정방향 */
+}
+
+.store_filter .filter_list .store_filter_head{
+    font-size: 28px;
+    font-weight: 600;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.filter_list ul li:hover{
+    background: var(--grey90);
+}
+.store_filter .filter_list .store_filter_head>h6 {
+    font-size: 28px;
+}
+
+
+.store_filter .filter_list .store_filter_head>span {
+   font-size: 48px;
+}
+
+
+
+.store_filter .filter_list>ul li label input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.custom_checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    position: relative;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 200;
+    user-select: none;
+    padding: 8px 20px;
+}
+
+.custom_checkbox:hover{
+    font-weight: 500;
+}
+
+
+.custom_checkbox .checkmark {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    /* background-color: #f0f0f0; */
+    border: 1px solid var(--w-color);
+    border-radius: 50%;
+    /* 동그라미 */
+    margin-right: 16px;
+    transition: background-color 0.2s, border-color 0.2s;
+    position: relative;
+}
+
+/* 체크박스 선택 시 스타일 */
+.custom_checkbox input:checked+.checkmark {
+    /* background-color: #4caf50; */
+    border-color: var(--w-color);
+    margin-right: 16px;
+
+}
+
+.custom_checkbox input:checked+.checkmark::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    background-color: var(--w-color);
+    border-radius: 50%;
+    margin-right: 16px;
+
+    /* 내부 원 */
+}
+
+.store_contents article {
+    flex: 1;
+}
+
+.store_contents article ul {
+    width: 100%;
+    display: flex;
+    column-gap: 24px;
+    row-gap: 10px;
+    flex-wrap: wrap;
+}
+
+.store_contents article ul li {
+    width: 365px;
+    height: 394px;
+}
+
+.store_contents article ul li a {
+    width: 100%;
+    height: 100%;
+}
+
+.store_contents article ul li a .store_product_img {
+    width: 100%;
+    height: 288px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.store_contents article ul li a .store_product_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.store_contents article ul li:hover a .store_product_img img {
+    transform: scale(1.04);
+}
+
+.store_contents article ul li a .store_product_txt {
+    width: 100%;
+    padding: 24px 20px;
+    font-size: 20px;
+
+}
+
+.store_contents article ul li a .store_product_txt p {
+    font-weight: 300;
+    padding-bottom: 10px;
+}
+
+.store_contents article ul li a .store_product_txt span {
+    font-weight: 600;
+}

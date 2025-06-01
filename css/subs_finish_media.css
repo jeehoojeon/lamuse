@@ -1,0 +1,40 @@
+@charset "utf-8";
+@media screen and (max-width: 1024px) {
+    .container {
+        padding: 80px 0;
+    }
+
+    .subs_finish_info li {
+
+        font-size: 18px;
+    }
+
+    .sub_finish_btn {
+        font-size: 18px;
+        height: 53px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .container {
+        padding: 36px 0 280px 0;
+    }
+
+    .subs_finish_inner {
+        gap: 30px;
+        padding: 50px 24px;
+    }
+    h6{
+        font-size: 24px;
+    }
+    .subs_finish_info li {
+
+        font-size: 16px;
+    }
+
+    .sub_finish_btn {
+        font-size: 14px;
+        height: 48px;
+        white-space: nowrap;
+    }
+}

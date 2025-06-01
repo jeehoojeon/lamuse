@@ -1,0 +1,223 @@
+@charset "utf-8";
+
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    height: 866px;
+    display: flex;
+
+}
+
+.container section {
+    width: 50%;
+    height: 100%;
+}
+
+.container .login_left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .login_left .login_inner {
+    width: 60%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login_title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 48px;
+}
+
+.login_title p {
+    font-size: 24px
+}
+
+.login_email {
+    width: 75%;
+    height: 58px;
+    /* border-radius: 10px; */
+    border: 1px solid var(--w-color);
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.login_email span {
+    font-size: 24px;
+}
+
+.login_email .login_email_input {
+    flex: 1;
+    background-color: transparent;
+    height: 100%;
+    border: none;
+    color: var(--w-color);
+    padding: 0;
+}
+
+.login_email .login_email_input::placeholder {
+    font-size: 18px;
+    color: var(--grey60);
+    line-height: 3;
+}
+
+
+.login_password {
+    width: 75%;
+    height: 58px;
+    /* border-radius: 10px; */
+    border: 1px solid var(--w-color);
+    display: flex;
+    align-items: center;
+    padding: 10px 16px;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.login_password span {
+    font-size: 24px;
+
+}
+
+.login_password .login_pw_input {
+    flex: 1;
+    background-color: transparent;
+    height: 100%;
+    border: none;
+    color: var(--w-color);
+    padding: 0;
+
+}
+
+.login_password .login_pw_input::placeholder {
+    font-size: 18px;
+    color: var(--grey60);
+}
+
+.login_btn {
+    width: 75%;
+    height: 58px;
+    background: var(--main-red);
+    border: none;
+    border-radius: 10px;
+    color: var(--w-color);
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 48px;
+    line-height: 1;
+    cursor: pointer;
+    font-family: var(--pretendard);
+
+}
+
+.login_btn a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_join {
+    width: 75%;
+}
+
+.login_join>p {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.login_join .login_join_btn {
+    width: 100%;
+    height: 58px;
+    margin-bottom: 50px;
+}
+
+.login_join .login_join_btn a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: var(--main-red);
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.login_other {
+    width: 100%;
+    margin-bottom: 40px;
+
+}
+
+.login_other .login_other_txt {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.login_other .login_other_txt .login_other_line1,
+.login_other .login_other_txt .login_other_line2 {
+    flex: 1;
+    height: 1px;
+    background: var(--w-color);
+}
+
+.login_other .login_other_txt>p {
+    padding: 0 80px;
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+.login_other .login_other_sns ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 36px;
+}
+
+.login_other .login_other_sns ul li a {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.login_other .login_other_sns ul li a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.login_pw_find {
+    display: flex;
+    gap: 12px;
+    font-size: 18px;
+    white-space: nowrap;
+
+}
+
+.login_pw_find .login_pw_find_go {
+    text-decoration: underline;
+}
+
+
+.container .login_right img {
+    border-radius: 0;
+}

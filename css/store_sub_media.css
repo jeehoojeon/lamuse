@@ -1,0 +1,100 @@
+@charset "utf-8";
+@media screen and (max-width: 1024px) {
+
+    .store_sub_contents .store_sub_detail_top {
+        width: 100%;
+        height: 400px;
+    }
+
+    .store_sub_detail_img {
+        width: 432px;
+        height: 100%;
+    }
+
+    .store_sub_detail_txt {
+        width: 436px;
+        height: 100%;
+        padding: 36px 0;
+    }
+
+    .store_sub_detail_txt .store_sub_detail_txt_title h6 {
+        font-size: 28px;
+    }
+
+    .store_sub_detail_txt .store_sub_detail_txt_title>p {
+        font-size: 18px;
+        line-height: 1.3;
+    }
+
+    .store_sub_detail_txt .store_sub_detail_txt_title>p {
+        margin-bottom: 34px;
+    }
+
+    .store_sub_detail_txt .detail_name_info ul li {
+        width: 100%;
+        height: 52px;
+    }
+
+    .store_sub_detail_txt .detail_name_info ul li p {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .store_sub_detail_txt .detail_name_info ul li span {
+        font-size: 18px;
+        font-weight: 300;
+    }
+
+    .store_sub_detail_txt .store_go_link {
+        height: 48px;
+
+    }
+
+    .store_sub_detail_txt .store_go_link a {
+        font-size: 18px;
+    }
+
+    .store_sub_detail_bottom {
+        padding: 80px 0;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .store_sub_contents {
+        padding-top: 36px;
+    }
+
+    .store_sub_contents .store_sub_detail_top {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+.store_sub_detail_img {
+    width: 100%;
+    height: 304px;
+    margin-bottom: 20px;
+}
+.store_sub_detail_txt {
+    width: 100%;
+    padding: 20px 0;
+}
+.store_sub_detail_txt .store_sub_detail_txt_title h6 {
+    font-size: 16px;
+}
+.store_sub_detail_txt .store_sub_detail_txt_title>p {
+    width: 100%;
+    font-size: 16px;white-space: normal;
+}
+.store_sub_detail_txt .detail_name_info ul li p {
+    font-size: 16px;
+}
+.store_sub_detail_txt .detail_name_info ul li span {
+    font-size: 16px;
+
+}
+
+   .store_sub_detail_txt .store_go_link a {
+    font-size: 16px;
+}
+
+}

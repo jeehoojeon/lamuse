@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="가볍게 즐기는 뷰티 매거진 구독 서비스입니다.">
+    <meta name="keywords" content="뷰티, 트렌드, 매거진, 구독">
+    <meta name="author" content="myojo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La MUSE : Beauty</title>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="favicon">
+    <!-- 구글 아이콘 연결 -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <!-- AOS css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/common_media.css">
+    <link rel="stylesheet" href="../css/commonlayout.css">
+    <link rel="stylesheet" href="../css/CLM.css">
+
+    <!-- AOS js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-simplyscroll/2.1.1/jquery.simplyscroll.min.js"></script>
+    <script src="../js/common.js" defer></script>
+    <script src="../js/commonlayout.js" defer></script>
+    <script src="../js/chatbot.js" defer></script>
+</head>
+
+<body>
+    <div class="chat_bot">
+        <div class="chat_top">
+            <img src="../img/chatbot1.png" alt="lamuse chatbot">
+            운영시간<br>
+            09:00 ~ 18:00
+        </div><!-- //.chat_top -->
+        <div class="chat_body">
+            <div class="chat_time">
+                오후 4:00
+            </div><!-- //.chat_time -->
+            <div class="chat_to">
+                <div class="chat_icon">
+                    <img src="../img/chatbot2.png" alt="챗봇아이콘">
+                </div><!-- //.chat_icon -->
+                <div class="chatting">
+                    고객님,<br>
+                    어떤 내용을 도와드릴까요?
+                </div><!-- //.chatting -->
+            </div><!-- //.chat_to -->
+            <ul>
+                <li>컨텐츠 추천</li>
+                <li>구독 문의하기</li>
+            </ul>
+        </div><!-- //.chat_body -->
+        <div class="chat_bottom">
+            전화 연결 : 02-000-0000
+        </div><!-- //.chat_bottom -->
+    </div><!-- //.chat_bot -->
+    <div class="aside inner">
+        <aside class="chat">
+            <span class="material-symbols-outlined">
+                chat_bubble
+            </span>
+        </aside>
+        <aside class="up">
+            <a href="#"><span class="material-symbols-outlined">
+                    arrow_upward
+                </span></a>
+        </aside>
+    </div><!-- //.aside -->
+    <div class="fix">
+        <img src="../img/side_bg.png" alt="la muse" class="logo">
+        <div class="search">
+            <input type="text" placeholder="제목, 내용을 입력해주세요">
+            <a href="#">
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+            </a>
+        </div><!-- //.search -->
+        <div class="gnb">
+            <ul>
+                <li><a href="beauty_main.html">뷰티</a>
+                    <ul class="sub">
+                        <li><a href="beauty_trend.html">뷰티트렌드</a></li>
+                        <li><a href="beauty_sol.html">뷰티솔루션</a></li>
+                        <li><a href="beauty_compare.html">저렴이vs고렴이</a></li>
+                        <li><a href="beauty_vid.html">영상 속 제품</a></li>
+                    </ul><!-- //.sub -->
+                </li>
+                <li><a href="../fashion/fashion_main.html">패션</a>
+                    <ul class="sub">
+                        <li><a href="../fashion/fashion_trend.html">패션트렌드</a></li>
+                        <li><a href="../fashion/fashion_tip.html">스타일링 팁</a></li>
+                        <li><a href="../fashion/fashion_info.html">할인정보</a></li>
+                        <li><a href="../fashion/fashion_codi.html">기온별 코디</a></li>
+                    </ul><!-- //.sub -->
+                </li>
+                <li><a href="../celeb/celeb_main.html">셀럽 애정템</a>
+                </li>
+                <li><a href="../store/store_main.html">스토어</a>
+                </li>
+                <li><a href="../subs/subs_main.html">구독하기</a>
+                </li>
+                <li><a href="../mypage/mypage_main.html">마이페이지</a>
+                </li>
+            </ul>
+        </div><!-- //.gnb -->
+        <div class="sns">
+            <ul>
+                <li><a href="#"><img src="../img/sns1.png" alt="instagram"></a></li>
+                <li><a href="#"><img src="../img/sns2.png" alt="youtube"></a></li>
+                <li><a href="#"><img src="../img/sns3.png" alt="facebook"></a></li>
+            </ul>
+        </div><!-- //.sns -->
+        <ul class="us">
+            <li><a href="#">고객센터</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">광고·제휴 문의</a></li>
+            <li><a href="#">윤리경영</a></li>
+        </ul><!-- //.us -->
+    </div><!-- //.fix -->
+    <nav>
+        <div class="inner">
+            <div class="nav_top">
+                <div class="nav_left">
+                    이나라님, 반갑습니다.
+                </div><!-- //.nav_left -->
+                <div class="nav_right">
+                    <div class="sel">
+                        <p>
+                            <strong>KOR</strong>
+                            <span class="material-symbols-outlined">
+                                keyboard_arrow_down
+                            </span>
+                        </p>
+                        <ul>
+                            <li><a href="#"><strong>ENG</strong></a></li>
+                            <li><a href="#"><strong>JPN</strong></a></li>
+                        </ul>
+                    </div><!-- //.sel -->
+                    <a href="../login/login.html" class="login">
+                        <p>LOG OUT</p>
+                        <span class="material-symbols-outlined">
+                            logout
+                        </span>
+                    </a>
+                </div><!-- //.nav_right -->
+            </div><!-- //.nav_top -->
+            <div class="nav_middle">
+                <div class="logo">
+                    <h1><a href="../index.html"><img src="../img/logo.png" alt="La MUSE"></a></h1>
+                </div><!-- //.logo -->
+                <div class="nav_right">
+                    <div class="sel">
+                        <p>
+                            <strong>KOR</strong>
+                            <span class="material-symbols-outlined">
+                                keyboard_arrow_down
+                            </span>
+                        </p>
+                        <ul>
+                            <li><a href="#"><strong>ENG</strong></a></li>
+                            <li><a href="#"><strong>JPN</strong></a></li>
+                        </ul>
+                    </div><!-- //.sel -->
+                    <a href="../login/login.html" class="login">
+                        <p>LOG OUT</p>
+                        <span class="material-symbols-outlined">
+                            logout
+                        </span>
+                    </a>
+                </div><!-- //.nav_right -->
+            </div>
+            <div class="nav_bottom">
+                <div class="logo">
+                    <h1><a href="../index.html"><img src="../img/logo.png" alt="La MUSE"></a></h1>
+                </div><!-- //.logo -->
+                <ul class="gnb">
+                    <li><a href="beauty_main.html">뷰티</a>
+                        <ul class="sub">
+                            <li><a href="beauty_trend.html">뷰티트렌드</a></li>
+                            <li><a href="beauty_sol.html">뷰티솔루션</a></li>
+                            <li><a href="beauty_compare.html">저렴이vs고렴이</a></li>
+                            <li><a href="beauty_vid.html">영상 속 제품</a></li>
+                        </ul><!-- //.sub -->
+                    </li>
+                    <li><a href="../fashion/fashion_main.html">패션</a>
+                        <ul class="sub">
+                            <li><a href="../fashion/fashion_trend.html">패션트렌드</a></li>
+                            <li><a href="../fashion/fashion_tip.html">스타일링 팁</a></li>
+                            <li><a href="../fashion/fashion_info.html">할인정보</a></li>
+                            <li><a href="../fashion/fashion_codi.html">기온별 코디</a></li>
+                        </ul><!-- //.sub -->
+                    </li>
+                    <li><a href="../celeb/celeb_main.html">셀럽애정템</a>
+                    </li>
+                    <li><a href="../store/store_main.html">스토어</a>
+                    </li>
+                    <li><a href="../subs/subs_main.html">구독하기</a>
+                    </li>
+                    <li><a href="../mypage/mypage_main.html">마이페이지</a></li>
+                </ul><!-- //.gnb -->
+
+                <div class="nv_right">
+                    <div class="search">
+                        <input type="text" placeholder="제목, 내용을 입력해주세요">
+                        <a href="#">
+                            <span class="material-symbols-outlined">
+                                search
+                            </span>
+                        </a>
+                    </div><!-- //.search -->
+                    <div class="ham">
+                        <span class="material-symbols-outlined menu">
+                            menu
+                        </span>
+                        <span class="material-symbols-outlined x">
+                            close
+                        </span>
+                    </div><!-- //.ham -->
+                </div><!-- //.nv_right -->
+            </div><!-- //.nav_bottom -->
+        </div><!-- //.inner -->
+    </nav>
+
+    <div class="title beauty_main">
+        <h4>Beauty</h4>
+    </div>
+    <!-- title옆에 클래스 하나 더 걸어서 그거 불러다가 백그라운드 이미지 설정하면 됨 -->
+
+    <div class="topper inner">
+        <h5 class="sokcho top5">조회수 TOP 5</h5>
+        <h5 class="sokcho none">조회수 TOP3</h5>
+        <div class="topper_content">
+            <div class="topper_left">
+                <a href="beauty_trend_detail.html">
+                    <ul>
+                        <li><img src="../img/beauty_main_img1.png" alt="뷰티트렌드"></li>
+                        <li class="txt">
+                            <div class="tag">뷰티트렌드</div>
+                            <div class="name">
+                                '예방적 안티에이징'의 부상
+                            </div>
+                        </li>
+                        <li class="by">2025.07.12</li>
+                    </ul>
+                </a>
+            </div><!-- //.topper_left -->
+            <div class="topper_right">
+                <div class="toppersmall">
+                    <a href="beauty_compare_detail.html">
+                        <ul>
+                            <li><img src="../img/beauty_main_img2.png" alt="저렴이고렴이"></li>
+                            <li class="txt">
+                                <div class="tag">저렴이 VS 고렴이</div>
+                                <div class="name">
+                                    핸드크림, 3천원 vs 5만원 보습력비교
+                                </div>
+                            </li>
+                            <li class="by">2025.07.16</li>
+                        </ul>
+                    </a>
+                </div><!-- //.toppersmall -->
+                <div class="toppersmall">
+                    <a href="beauty_sol_detail.html">
+                        <ul>
+                            <li><img src="../img/beauty_main_img3.png" alt="커버메이크업"></li>
+                            <li class="txt">
+                                <div class="tag">피부고민 해결법</div>
+                                <div class="name">
+                                    넓어진 모공, 어떻게 없앨까?
+                                </div>
+                            </li>
+                            <li class="by">2025.07.20</li>
+                        </ul>
+                    </a>
+                </div><!-- //.toppersmall -->
+                <div class="toppersmall no">
+                    <a href="beauty_trend_detail.html">
+                        <ul>
+                            <li><img src="../img/beauty_main_img4.png" alt="뷰티트렌드"></li>
+                            <li class="txt">
+                                <div class="tag">뷰티트렌드</div>
+                                <div class="name">
+                                    순한 인상의 핵심! 연한 눈썹
+                                </div>
+                            </li>
+                            <li class="by">2025.07.28</li>
+                        </ul>
+                    </a>
+                </div><!-- //.toppersmall -->
+                <div class="toppersmall no">
+                    <a href="beauty_vid_detail.html">
+                        <ul>
+                            <li><img src="../img/beauty_main_img5.png" alt="영상속제품정보"></li>
+                            <li class="txt">
+                                <div class="tag">영상 속 제품정보</div>
+                                <div class="name">
+                                    다현의 상큼오렌지 치크 팁
+                                </div>
+                            </li>
+                            <li class="by">2025.07.30</li>
+                        </ul>
+                    </a>
+                </div><!-- //.toppersmall -->
+            </div><!-- //.topper_right -->
+        </div><!-- //.topper_content -->
+    </div><!-- //.topper -->
+
+    <div class="thumb inner">
+        <div class="thumb_title">
+            <a href="beauty_trend.html">
+                <h5 class="sokcho">뷰티 트렌드</h5>
+                <span class="material-symbols-outlined">
+                    arrow_forward_ios
+                </span>
+            </a>
+        </div><!-- //.thumb_title -->
+        <div class="thumb_contents">
+            <div class="thumb_small three">
+                <a href="beauty_trend_detail.html">
+                    <ul>
+                        <li><img src="../img/beauty_main_img6.png" alt="'예방적 안티에이징'의 부상"></li>
+                        <li class="txt">
+                            <div class="name">
+                                '예방적 안티에이징'의 부상
+                            </div>
+                            <div class="by">2025.08.01</div>
+                        </li>
+                    </ul>
+                </a>
+            </div><!-- //.thumb_small -->
+            <div class="thumb_small three">
+                <a href="beauty_trend_detail.html">
+                    <ul>
+                        <li><img src="../img/beauty_main_img7.png" alt="순한 인상의 핵심! 연한 눈썹"></li>
+                        <li class="txt">
+                            <div class="name">순한 인상의 핵심! 연한 눈썹</div>
+                            <div class="by">2025.08.03</div>
+                        </li>
+                    </ul>
+                </a>
+            </div><!-- //.thumb_small -->
+            <div class="thumb_small three no">
+                <a href="beauty_trend_detail.html">
+                    <ul>
+                        <li><img src="../img/beauty_main_img8.png" alt="올해도 글로우립이 유행?"></li>
+                        <li class="txt">
+                            <div class="name">올해도 글로우립이 유행?</div>
+                            <div class="by">2025.08.06</div>
+                        </li>
+                    </ul>
+                </a>
+            </div><!-- //.thumb_small -->
+        </div><!-- //.thumb_contents -->
+    </div><!-- //.thumb -->
+
+    <div class="thumb inner">
+        <div class="thumb_title">
+            <a href="beauty_sol.html">
+                <h5 class="sokcho">뷰티 솔루션</h5>
+                <span class="material-symbols-outlined">
+                    arrow_forward_ios
+                </span>
+            </a>
+        </div><!-- //.thumb_title -->
+        <div class="thumb_contents large">
+            <div class="thumb_small">
+                <a href="beauty_sol_detail.html">
+                    <ul>
+                        <li><img src="../img/beauty_main_img9.png" alt="넓어진 모공, 어떻게 없앨까?"></li>
+                        <li class="txt">
+                            <div class="name">넓어진 모공, 어떻게 없앨까?</div>
+                            <div class="by">2025.08.08</div>
+                        </li>
+                    </ul>
+                </a>
+            </div><!-- //.thumb_m_small -->
+            <div class="thumb_small">
+                <a href="beauty_sol_detail.html">
+                    <ul>
+                        <li><img src="../img/beauty_main_img10.png" alt="매끄러운 피부결, AHA와 PHA로 새롭게"></li>
+                        <li class="txt">
+                            <div class="name">매끄러운 피부결, AHA와 PHA로 새롭게</div>
+                            <div class="by">2025.08.13</div>
+                        </li>
+                    </ul>
+                </a>
+            </div><!-- //.thumb_m_small -->
+            <div class="thumb_small no">
+                <a href="beauty_sol_detail.html">
+                    <ul>
+                        <li><img src="../img/beauty_main_img11.png" alt="피부 속당김"></li>
+                        <li class="txt">
+                            <div class="name">피부 속당김, 수분만 채워선 안 되는 이유</div>
+                            <div class="by">2025.08.18</div>
+                        </li>
+                    </ul>
+                </a>
+            </div><!-- //.thumb_small -->
+            <div class="thumb_small no">
+                <a href="beauty_sol_detail.html">
+                    <ul>
+                        <li><img src="../img/beauty_main_img12.png" alt="홍조 피부"></li>
+                        <li class="txt">
+                            <div class="name">지긋지긋한 홍조 피부, 어떻게 진정시킬까?</div>
+                            <div class="by">2025.08.22</div>
+                        </li>
+                    </ul>
+                </a>
+            </div><!-- //.thumb_small -->
+        </div><!-- //.thumb_contents -->
+    </div><!-- //.thumb -->
+
+    <div class="thumb inner">
+        <div class="thumb_title">
+            <a href="beauty_compare.html">
+                <h5 class="sokcho">저렴이 VS 고렴이</h5>
+                <span class="material-symbols-outlined">
+                    arrow_forward_ios
+                </span>
+            </a>
+        </div><!-- //.thumb_title -->
+        <div class="thumb_big_contents">
+            <div class="thumb_big">
+                <a href="beauty_compare_detail.html">
+                    <ul>
+                        <li class="none"><img src="../img/beauty_main_img13.png" alt="저렴이 VS 고렴이"></li>
+                        <li class="medium_title">헤어 스프레이,<br>
+                            고렴이가 더 오래 고정될까?</li>
+                        <li class="by">2025.08.27</li>
+                    </ul>
+                </a>
+            </div><!-- //.thumb_big -->
+            <div class="thumb_big">
+                <a href="beauty_compare_detail.html">
+                    <ul>
+                        <li class="none"><img src="../img/beauty_main_img14.png" alt="저렴이 VS 고렴이"></li>
+                        <li class="medium_title">핸드크림,<br>
+                            3천원 vs 5만원 보습력 차이</li>
+                        <li class="by">2025.08.30</li>
+                    </ul>
+                </a>
+            </div><!-- //.thumb_big -->
+        </div><!-- //.thumb_big_contents -->
+    </div><!-- //.thumb -->
+
+    <div class="thumb inner">
+        <div class="thumb_title">
+            <a href="beauty_vid.html">
+                <h5 class="sokcho">영상 속 제품정보</h5>
+                <span class="material-symbols-outlined">
+                    arrow_forward_ios
+                </span>
+            </a>
+        </div><!-- //.thumb_title -->
+        <div class="thumb_contents">
+            <div class="thumb_small three">
+                <a href="beauty_vid_detail.html">
+                    <ul>
+                        <li><img src="../img/beauty_main_img15.png" alt="제품정보"></li>
+                        <li class="txt">
+                            <div class="name">
+                                송유리의 반짝이는 눈매 비결 공개
+                            </div>
+                            <div class="by">2025.09.04</div>
+                        </li>
+                    </ul>
+                </a>
+            </div><!-- //.thumb_small -->
+            <div class="thumb_small three">
+                <a href="beauty_vid_detail.html">
+                    <ul>
+                        <li><img src="../img/beauty_main_img16.png" alt="제품정보"></li>
+                        <li class="txt">
+                            <div class="name">송채영의 엣지있는 브라운 라이너</div>
+                            <div class="by">2025.09.06</div>
+                        </li>
+                    </ul>
+                </a>
+            </div><!-- //.thumb_small -->
+            <div class="thumb_small three no">
+                <a href="beauty_vid_detail.html">
+                    <ul>
+                        <li><img src="../img/beauty_main_img17.png" alt="제품정보"></li>
+                        <li class="txt">
+                            <div class="name">유하영의 핑크 글로우 치크 팁</div>
+                            <div class="by">2025.09.12</div>
+                        </li>
+                    </ul>
+                </a>
+            </div><!-- //.thumb_small -->
+        </div><!-- //.thumb_contents -->
+    </div><!-- //.thumb -->
+
+    <footer>
+        <div class="f_contents inner">
+            <div class="top">
+                <ul>
+                    <li><a href="#">고객센터</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">광고·제휴 문의</a></li>
+                    <li><a href="#">윤리경영</a></li>
+                </ul>
+            </div><!-- //.top -->
+            <div class="f_middle">
+                <div class="logo">
+                    <a href="../index.html">
+                        <img src="../img/footer_logo.png" alt="LaMUSE">
+                    </a>
+                </div><!-- //.logo -->
+                <div class="sns">
+                    <ul>
+                        <li><a href="#"><img src="../img/sns1.png" alt="instagram"></a></li>
+                        <li><a href="#"><img src="../img/sns2.png" alt="youtube"></a></li>
+                        <li><a href="#"><img src="../img/sns3.png" alt="facebook"></a></li>
+                    </ul>
+                </div><!-- //.sns -->
+            </div><!-- //.f_middle -->
+            <div class="copy">
+                © 2025 LaMUSE. All Rights Reserved.
+            </div><!-- //.copy -->
+        </div><!-- //.f_contents -->
+    </footer>
+</body>
+
+</html>

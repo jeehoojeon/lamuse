@@ -1,0 +1,460 @@
+@charset "utf-8";
+
+/* main_visual */
+.main_visual {
+    width: 100%;
+    position: relative;
+}
+
+.main_visual .swiper-slide {
+    width: 100%;
+    height: 909px;
+    /* background: yellow; */
+}
+
+.main_visual .swiper-slide a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    position: relative;
+}
+
+.main_visual .swiper-slide a p {
+    position: absolute;
+    left: 67px;
+    top: 75%;
+    font-style: italic;
+    font-size: 80px;
+    font-family: var(--DM);
+}
+
+.main_visual .swiper-slide a div {
+    position: absolute;
+    left: 67px;
+    top: 85%;
+    font-size: 60px;
+    font-weight: 300;
+}
+
+.main_visual .swiper-slide a div span {
+    font-weight: 600;
+}
+
+.main_visual li.one {
+    background: url(../img/main1.png) no-repeat center center;
+    background-size: cover;
+}
+
+.main_visual li.two {
+    background: url(../img/main2.png)no-repeat center center;
+    background-size: cover;
+}
+
+.main_visual li.three {
+    background: url(../img/main3.png)no-repeat center center;
+    background-size: cover;
+}
+
+.main_visual li.four {
+    background: url(../img/main1.png)no-repeat center center;
+    background-size: cover;
+}
+
+.main_visual li.five {
+    background: url(../img/main2.png)no-repeat center center;
+    background-size: cover;
+}
+
+.main_visual li.six {
+    background: url(../img/main3.png)no-repeat center center;
+    background-size: cover;
+}
+
+/* skincare */
+.skincare {
+    padding-top: 387px;
+    padding-bottom: 150px;
+    display: flex;
+    /* background: greenyellow; */
+    gap: 36px;
+    align-items: flex-end;
+}
+
+.skincare_left {
+    width: 629px;
+    height: 963px;
+    /* 임시임 */
+    /* background: rgb(188, 188, 188); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 120%;
+    /* 57.6px */
+    letter-spacing: -0.96px;
+}
+
+.skincare_left a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* background: #ccc; */
+    gap: 20px;
+}
+
+.skincare .skincare_txt {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+.skincare .swiper {
+    width: 1027px;
+    height: 682px;
+    /* 부모의 고정 너비 */
+    /* background: green; */
+    overflow: hidden;
+    /* 스크롤 안 보이게 */
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin-bottom: 25px;
+}
+
+.skincare .swiper .h3_text {
+    width: 50%;
+    height: 100px;
+    /* 또는 flex: 0 0 auto; */
+    /* background: rgb(255, 106, 106); */
+}
+
+.skincare .swiper-wrapper {
+    display: flex;
+    /* 슬라이드 가로 정렬 */
+    height: 490px;
+    /* align-items: flex-end; */
+
+}
+
+.skincare .swiper-slide {
+    width: 325px;
+    /* 슬라이드 고정 너비 */
+    flex-shrink: 0;
+    /* 줄어들지 않게 */
+    height: 490px;
+    /* background: #d5d5d5; */
+    font-size: 24px;
+}
+
+.skincare .swiper-slide a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: space-between;
+    align-items: flex-start;
+    opacity: .8;
+    transition: .3s;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.skincare .swiper-slide a img {
+    width: 325px;
+}
+
+.skincare .swiper-slide:hover a {
+    opacity: 1;
+}
+
+/* makeup */
+.makeup {
+    padding: 150px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+    align-items: center;
+    /* background: green; */
+}
+
+.makeup .makeup_content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.makeup_content div a ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.makeup_content a ul li:nth-child(4) {
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.makeup_left a ul {
+    gap: 20px;
+}
+
+.makeup_left {
+    opacity: 0;
+transform: scale(0.95);
+transition: all 0.6s ease;
+}
+
+.makeup_left.on {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.makeup_right a ul {
+    gap: 24px;
+}
+
+.makeup_left a ul li {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    /* 43.2px */
+    letter-spacing: -0.72px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.makeup_left {
+    width: 600px;
+}
+
+.makeup_left a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.makeup_right {
+    width: 58%;
+    /* background: red; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+
+.makeup_right ul li {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.makeupsmall {
+    opacity: 0;
+    transform: scale(0.95);
+    transition: all 0.6s ease;
+}
+
+.makeupsmall.on {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.makeupsmall img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.makeupsmall.no {
+    display: none;
+}
+
+/* video */
+.video {
+    padding: 150px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+    align-items: center;
+    /* 가운데로 정렬~ */
+}
+
+.vid_contents {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.vid_contents .vidboth {
+    width: calc(50% - 36px);
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+}
+
+.vid_contents .vid {
+    height: 491px;
+    border-radius: 10px;
+}
+
+.vid_contents .vid.vid_one {
+    background: url(../img/main_img11.png)no-repeat center center;
+    background-size: cover;
+}
+
+.vid_contents .vid.vid_two {
+    background: url(../img/main_img12.png)no-repeat center center;
+    background-size: cover;
+}
+
+.vid_contents .vid.vid_three {
+    background: url(../img/main_img13.png)no-repeat center center;
+    background-size: cover;
+}
+
+.vid_contents .vid.vid_four {
+    background: url(../img/main_img14.png)no-repeat center center;
+    background-size: cover;
+}
+
+.vid a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.vid a ul {
+    width: 80%;
+    height: 16%;
+    border-top: 1px solid var(--w-color);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 35px;
+    font-style: normal;
+    line-height: 110%;
+    /* 38.5px */
+    gap: 18px;
+    position: relative;
+    opacity: 0;
+    transition: 0.6s;
+}
+
+.vid a:hover ul {
+    opacity: 1;
+}
+
+.vid a ul li {
+    position: absolute;
+    left: 0;
+    bottom: -50px;
+    transition: .6s;
+}
+
+.vid a:hover ul li {
+    bottom: 25%;
+
+}
+
+.vid a ul span {
+    font-weight: 600;
+}
+
+/* store */
+.store {
+    width: 100%;
+    padding: 150px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 120px;
+    overflow: hidden;
+}
+
+.store_slide {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    overflow: hidden;
+}
+
+.store_slide .swiper {
+    width: 100%;
+    max-width: 2055px;
+    height: auto;
+    /* 부모의 고정 너비 */
+    /* background: green; */
+}
+
+.store_slide .swiper-wrapper {
+    display: flex;
+    /* 슬라이드 가로 정렬 */
+    height: auto;
+    align-items: flex-end;
+}
+
+.store_slide .swiper-wrapper img {
+    border-radius: 10px;
+}
+
+
+/* interaction */
+.simply-scroll {
+    width: 100%;
+}
+
+.simply-scroll .simply-scroll-clip {
+    overflow: hidden;
+}
+
+.simply-scroll .simply-scroll-list {
+    display: flex;
+}
+
+.interaction {
+    width: 100%;
+    height: 91px;
+    color: var(--w-color);
+}
+
+.interaction .txtAniBox {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.interaction .txtAniBox .simply-scroll-container {
+    display: flex;
+    width: 100%;
+}
+
+.interaction .txtAniBox .simply-scroll .simply-scroll-clip {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+.interaction .txtAniBox .txtAni {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    transform-origin: left top;
+    background: var(--main-font);
+    height: 91px;
+}
+
+.interaction .txtAniBox .txtAni li {
+    margin-right: 30px;
+    font-size: 36px;
+}

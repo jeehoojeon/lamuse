@@ -1,0 +1,33 @@
+@charset "utf-8";
+@media screen and (max-width: 1024px) {
+   
+    
+}
+
+@media screen and (max-width: 375px) {
+
+    .container {
+        padding: 36px 16px;
+    }
+
+    .container .join_wrap {
+        width: 100%;
+    }
+
+    .join_title {
+        font-size: 28px;
+    }
+
+    .join_agree label {
+        font-size: 16px;
+    }
+
+    .agree_all .agree_all_box label {
+        font-size: 18px;
+    }
+
+    .agree_all p {
+        font-size: 14px;
+    }
+    
+}

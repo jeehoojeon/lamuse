@@ -1,0 +1,42 @@
+@charset "utf-8";
+@media screen and (max-width: 1024px) {
+    .container {
+        padding: 60px 0;
+    }
+.join3_finish_btn {
+    height: 53px;
+}
+.join3_finish_btn a{
+    font-size: 18px;
+}
+
+}
+
+@media screen and (max-width: 375px) {
+    .container {
+        padding: 36px 16px 290px 16px;
+    }
+.join_wrap h6{
+    font-size: 28px;
+    white-space: nowrap;
+}
+
+.join_wrap p{
+    font-size: 16px;
+}
+
+
+.join3_finish_img {
+    height: 177px;
+}
+
+.join3_finish_btn {
+    height: 48px;
+}
+
+
+.join3_finish_btn a{
+    font-size: 16px;
+}
+
+}

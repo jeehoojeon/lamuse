@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="가볍게 즐기는 뷰티 매거진 구독 서비스입니다.">
+    <meta name="keywords" content="뷰티, 트렌드, 매거진, 구독">
+    <meta name="author" content="myojo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La MUSE : Celeb</title>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="favicon">
+    <!-- 구글 아이콘 연결 -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <!-- AOS css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/common_media.css">
+    <link rel="stylesheet" href="../css/commonlayout.css">
+    <link rel="stylesheet" href="../css/CLM.css">
+
+    <!-- AOS js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-simplyscroll/2.1.1/jquery.simplyscroll.min.js"></script>
+    <script src="../js/common.js" defer></script>
+    <script src="../js/commonlayout.js" defer></script>
+    <script src="../js/chatbot.js" defer></script>
+</head>
+
+<body>
+    <div class="chat_bot">
+        <div class="chat_top">
+            <img src="../img/chatbot1.png" alt="lamuse chatbot">
+            운영시간<br>
+            09:00 ~ 18:00
+        </div><!-- //.chat_top -->
+        <div class="chat_body">
+            <div class="chat_time">
+                오후 4:00
+            </div><!-- //.chat_time -->
+            <div class="chat_to">
+                <div class="chat_icon">
+                    <img src="../img/chatbot2.png" alt="챗봇아이콘">
+                </div><!-- //.chat_icon -->
+                <div class="chatting">
+                    고객님,<br>
+                    어떤 내용을 도와드릴까요?
+                </div><!-- //.chatting -->
+            </div><!-- //.chat_to -->
+            <ul>
+                <li>컨텐츠 추천</li>
+                <li>구독 문의하기</li>
+            </ul>
+        </div><!-- //.chat_body -->
+        <div class="chat_bottom">
+            전화 연결 : 02-000-0000
+        </div><!-- //.chat_bottom -->
+    </div><!-- //.chat_bot -->
+    <div class="aside inner">
+        <aside class="chat">
+            <span class="material-symbols-outlined">
+                chat_bubble
+            </span>
+        </aside>
+        <aside class="up">
+            <a href="#"><span class="material-symbols-outlined">
+                    arrow_upward
+                </span></a>
+        </aside>
+    </div><!-- //.aside -->
+    <div class="fix">
+        <img src="../img/side_bg.png" alt="la muse" class="logo">
+        <div class="search">
+            <input type="text" placeholder="제목, 내용을 입력해주세요">
+            <a href="#">
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+            </a>
+        </div><!-- //.search -->
+        <div class="gnb">
+            <ul>
+                <li><a href="../beauty/beauty_main.html">뷰티</a>
+                    <ul class="sub">
+                        <li><a href="../beauty/beauty_trend.html">뷰티트렌드</a></li>
+                        <li><a href="../beauty/beauty_sol.html">뷰티솔루션</a></li>
+                        <li><a href="../beauty/beauty_compare.html">저렴이vs고렴이</a></li>
+                        <li><a href="../beauty/beauty_vid.html">영상 속 제품</a></li>
+                    </ul><!-- //.sub -->
+                </li>
+                <li><a href="../fashion/fashion_main.html">패션</a>
+                    <ul class="sub">
+                        <li><a href="../fashion/fashion_trend.html">패션트렌드</a></li>
+                        <li><a href="../fashion/fashion_tip.html">스타일링 팁</a></li>
+                        <li><a href="../fashion/fashion_info.html">할인정보</a></li>
+                        <li><a href="../fashion/fashion_codi.html">기온별 코디</a></li>
+                    </ul><!-- //.sub -->
+                </li>
+                <li><a href="celeb_main.html">셀럽 애정템</a>
+                </li>
+                <li><a href="../store/store_main.html">스토어</a>
+                </li>
+                <li><a href="../subs/subs_main.html">구독하기</a>
+                </li>
+                <li><a href="../mypage/mypage_main.html">마이페이지</a>
+                </li>
+            </ul>
+        </div><!-- //.gnb -->
+        <div class="sns">
+            <ul>
+                <li><a href="#"><img src="../img/sns1.png" alt="instagram"></a></li>
+                <li><a href="#"><img src="../img/sns2.png" alt="youtube"></a></li>
+                <li><a href="#"><img src="../img/sns3.png" alt="facebook"></a></li>
+            </ul>
+        </div><!-- //.sns -->
+        <ul class="us">
+            <li><a href="#">고객센터</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">광고·제휴 문의</a></li>
+            <li><a href="#">윤리경영</a></li>
+        </ul><!-- //.us -->
+    </div><!-- //.fix -->
+    <nav>
+        <div class="inner">
+            <div class="nav_top">
+                <div class="nav_left">
+                    이나라님, 반갑습니다.
+                </div><!-- //.nav_left -->
+                <div class="nav_right">
+                    <div class="sel">
+                        <p>
+                            <strong>KOR</strong>
+                            <span class="material-symbols-outlined">
+                                keyboard_arrow_down
+                            </span>
+                        </p>
+                        <ul>
+                            <li><a href="#"><strong>ENG</strong></a></li>
+                            <li><a href="#"><strong>JPN</strong></a></li>
+                        </ul>
+                    </div><!-- //.sel -->
+                    <a href="../login/login.html" class="login">
+                        <p>LOG OUT</p>
+                        <span class="material-symbols-outlined">
+                            logout
+                        </span>
+                    </a>
+                </div><!-- //.nav_right -->
+            </div><!-- //.nav_top -->
+            <div class="nav_middle">
+                <div class="logo">
+                    <h1><a href="../index.html"><img src="../img/logo.png" alt="La MUSE"></a></h1>
+                </div><!-- //.logo -->
+                <div class="nav_right">
+                    <div class="sel">
+                        <p>
+                            <strong>KOR</strong>
+                            <span class="material-symbols-outlined">
+                                keyboard_arrow_down
+                            </span>
+                        </p>
+                        <ul>
+                            <li><a href="#"><strong>ENG</strong></a></li>
+                            <li><a href="#"><strong>JPN</strong></a></li>
+                        </ul>
+                    </div><!-- //.sel -->
+                    <a href="../login/login.html" class="login">
+                        <p>LOG OUT</p>
+                        <span class="material-symbols-outlined">
+                            logout
+                        </span>
+                    </a>
+                </div><!-- //.nav_right -->
+            </div>
+            <div class="nav_bottom">
+                <div class="logo">
+                    <h1><a href="../index.html"><img src="../img/logo.png" alt="La MUSE"></a></h1>
+                </div><!-- //.logo -->
+                <ul class="gnb">
+                    <li><a href="../beauty/beauty_main.html">뷰티</a>
+                        <ul class="sub">
+                            <li><a href="../beauty/beauty_trend.html">뷰티트렌드</a></li>
+                            <li><a href="../beauty/beauty_sol.html">뷰티솔루션</a></li>
+                            <li><a href="../beauty/beauty_compare.html">저렴이vs고렴이</a></li>
+                            <li><a href="../beauty/beauty_vid.html">영상 속 제품</a></li>
+                        </ul><!-- //.sub -->
+                    </li>
+                    <li><a href="../fashion/fashion_main.html">패션</a>
+                        <ul class="sub">
+                            <li><a href="../fashion/fashion_trend.html">패션트렌드</a></li>
+                            <li><a href="../fashion/fashion_tip.html">스타일링 팁</a></li>
+                            <li><a href="../fashion/fashion_info.html">할인정보</a></li>
+                            <li><a href="../fashion/fashion_codi.html">기온별 코디</a></li>
+                        </ul><!-- //.sub -->
+                    </li>
+                    <li><a href="celeb_main.html">셀럽애정템</a>
+                    </li>
+                    <li><a href="../store/store_main.html">스토어</a>
+                    </li>
+                    <li><a href="../subs/subs_main.html">구독하기</a>
+                    </li>
+                    <li><a href="../mypage/mypage_main.html">마이페이지</a></li>
+                </ul><!-- //.gnb -->
+
+                <div class="nv_right">
+                    <div class="search">
+                        <input type="text" placeholder="제목, 내용을 입력해주세요">
+                        <a href="#">
+                            <span class="material-symbols-outlined">
+                                search
+                            </span>
+                        </a>
+                    </div><!-- //.search -->
+                    <div class="ham">
+                        <span class="material-symbols-outlined menu">
+                            menu
+                        </span>
+                        <span class="material-symbols-outlined x">
+                            close
+                        </span>
+                    </div><!-- //.ham -->
+                </div><!-- //.nv_right -->
+            </div><!-- //.nav_bottom -->
+        </div><!-- //.inner -->
+    </nav>
+
+    <div class="title celeb_pick">
+        <h4>Celeb Picks</h4>
+    </div>
+    <!-- title옆에 클래스 하나 더 걸어서 그거 불러다가 백그라운드 이미지 설정하면 됨 -->
+
+    <div class="celeb_main inner">
+        <div class="celeb_title">
+            <h5 class="sokcho">셀럽 애정템</h5>
+        </div><!-- //.celeb_title -->
+        <div class="celeb_list">
+            <div class="celebsmall">
+                <a href="celeb_detail.html">
+                    <ul>
+                        <li><img src="../img/celeb_img1.png" alt="인스타스타"></li>
+                        <li class="txt">
+                            <div class="tag">인스타스타</div>
+                            <div class="name">
+                                110만 인플루언서 하윤의 애정템
+                            </div>
+                        </li>
+                        <li class="by">2025.08.30</li>
+                    </ul>
+                </a>
+            </div><!-- //.celebsmall -->
+            <div class="celebsmall">
+                <a href="celeb_detail.html">
+                    <ul>
+                        <li><img src="../img/celeb_img2.png" alt="유튜버"></li>
+                        <li class="txt">
+                            <div class="tag">유튜버</div>
+                            <div class="name">
+                                나연의 촉촉한 광채 메이크업
+                            </div>
+                        </li>
+                        <li class="by">2025.08.25</li>
+                    </ul>
+                </a>
+            </div><!-- //.celebsmall -->
+            <div class="celebsmall">
+                <a href="celeb_detail.html">
+                    <ul>
+                        <li><img src="../img/celeb_img3.png" alt="유튜버"></li>
+                        <li class="txt">
+                            <div class="tag">유튜버</div>
+                            <div class="name">
+                                써니의 스모키 메이크업
+                            </div>
+                        </li>
+                        <li class="by">2025.08.10</li>
+                    </ul>
+                </a>
+            </div><!-- //.celebsmall -->
+            <div class="celebsmall">
+                <a href="celeb_detail.html">
+                    <ul>
+                        <li><img src="../img/celeb_img4.png" alt="인스타스타"></li>
+                        <li class="txt">
+                            <div class="tag">인스타스타</div>
+                            <div class="name">
+                                설아의 코랄 메이크업
+                            </div>
+                        </li>
+                        <li class="by">2025.07.12</li>
+                    </ul>
+                </a>
+            </div><!-- //.celebsmall -->
+            <div class="celebsmall">
+                <a href="celeb_detail.html">
+                    <ul>
+                        <li><img src="../img/celeb_img5.png" alt="인스타스타"></li>
+                        <li class="txt">
+                            <div class="tag">인스타스타</div>
+                            <div class="name">
+                                유정의 몇통째 비운 찐 애정템 소개
+                            </div>
+                        </li>
+                        <li class="by">2025.07.08</li>
+                    </ul>
+                </a>
+            </div><!-- //.celebsmall -->
+            <div class="celebsmall">
+                <a href="celeb_detail.html">
+                    <ul>
+                        <li><img src="../img/celeb_img6.png" alt="유튜버"></li>
+                        <li class="txt">
+                            <div class="tag">유튜버</div>
+                            <div class="name">
+                                배우 지망생 채린의 파우치 공개
+                            </div>
+                        </li>
+                        <li class="by">2025.07.02</li>
+                    </ul>
+                </a>
+            </div><!-- //.celebsmall -->
+            <div class="celebsmall">
+                <a href="celeb_detail.html">
+                    <ul>
+                        <li><img src="../img/celeb_img7.png" alt="유튜버"></li>
+                        <li class="txt">
+                            <div class="tag">유튜버</div>
+                            <div class="name">
+                                봄웜 효선의 립스틱 추천
+                            </div>
+                        </li>
+                        <li class="by">2025.06.28</li>
+                    </ul>
+                </a>
+            </div><!-- //.celebsmall -->
+            <div class="celebsmall">
+                <a href="celeb_detail.html">
+                    <ul>
+                        <li><img src="../img/celeb_img8.png" alt="유튜버"></li>
+                        <li class="txt">
+                            <div class="tag">유튜버</div>
+                            <div class="name">
+                                쿨톤 대표 유튜버 진아의 쿨톤 애정템
+                            </div>
+                        </li>
+                        <li class="by">2025.06.16</li>
+                    </ul>
+                </a>
+            </div><!-- //.celebsmall -->
+            <div class="celebsmall no">
+                <a href="celeb_detail.html">
+                    <ul>
+                        <li><img src="../img/celeb_img9.png" alt="유튜버"></li>
+                        <li class="txt">
+                            <div class="tag">유튜버</div>
+                            <div class="name">
+                                지우가 n통째 비운 마스카라
+                            </div>
+                        </li>
+                        <li class="by">2025.06.02</li>
+                    </ul>
+                </a>
+            </div><!-- //.celebsmall -->
+        </div><!-- //.celeb_list -->
+    </div><!-- //.celeb_main -->
+
+    <div class="number inner">
+        <ul>
+            <li><a href="#"><span class="material-symbols-outlined">
+                        arrow_back_ios
+                    </span></a></li>
+            <li class="pick"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#"><span class="material-symbols-outlined">
+                        arrow_forward_ios
+                    </span></a></li>
+        </ul>
+    </div><!-- //.number -->
+
+    <footer>
+        <div class="f_contents inner">
+            <div class="top">
+                <ul>
+                    <li><a href="#">고객센터</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">광고·제휴 문의</a></li>
+                    <li><a href="#">윤리경영</a></li>
+                </ul>
+            </div><!-- //.top -->
+            <div class="f_middle">
+                <div class="logo">
+                    <a href="../index.html">
+                        <img src="../img/footer_logo.png" alt="LaMUSE">
+                    </a>
+                </div><!-- //.logo -->
+                <div class="sns">
+                    <ul>
+                        <li><a href="#"><img src="../img/sns1.png" alt="instagram"></a></li>
+                        <li><a href="#"><img src="../img/sns2.png" alt="youtube"></a></li>
+                        <li><a href="#"><img src="../img/sns3.png" alt="facebook"></a></li>
+                    </ul>
+                </div><!-- //.sns -->
+            </div><!-- //.f_middle -->
+            <div class="copy">
+                © 2025 LaMUSE. All Rights Reserved.
+            </div><!-- //.copy -->
+        </div><!-- //.f_contents -->
+    </footer>
+</body>
+
+</html>

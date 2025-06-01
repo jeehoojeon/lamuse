@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="가볍게 즐기는 뷰티 매거진 구독 서비스입니다.">
+    <meta name="keywords" content="뷰티, 트렌드, 매거진, 구독">
+    <meta name="author" content="myojo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La MUSE : Fashion</title>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="favicon">
+    <!-- 구글 아이콘 연결 -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <!-- AOS css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/common_media.css">
+    <link rel="stylesheet" href="../css/commonlayout.css">
+    <link rel="stylesheet" href="../css/CLM.css">
+
+    <!-- AOS js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-simplyscroll/2.1.1/jquery.simplyscroll.min.js"></script>
+    <script src="../js/common.js" defer></script>
+    <script src="../js/commonlayout.js" defer></script>
+</head>
+
+<body>
+    <div class="aside inner">
+<!--         <aside class="chat">
+            <span class="material-symbols-outlined">
+                chat_bubble
+            </span>
+        </aside> -->
+        <aside class="up">
+            <a href="#"><span class="material-symbols-outlined">
+                    arrow_upward
+                </span></a>
+        </aside>
+    </div><!-- //.aside -->
+    <div class="fix">
+        <img src="../img/side_bg.png" alt="la muse" class="logo">
+        <div class="search">
+            <input type="text" placeholder="제목, 내용을 입력해주세요">
+            <a href="#">
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+            </a>
+        </div><!-- //.search -->
+        <div class="gnb">
+            <ul>
+                <li><a href="../beauty/beauty_main.html">뷰티</a>
+                    <ul class="sub">
+                        <li><a href="../beauty/beauty_trend.html">뷰티트렌드</a></li>
+                        <li><a href="../beauty/beauty_sol.html">뷰티솔루션</a></li>
+                        <li><a href="../beauty/beauty_compare.html">저렴이vs고렴이</a></li>
+                        <li><a href="../beauty/beauty_vid.html">영상 속 제품</a></li>
+                    </ul><!-- //.sub -->
+                </li>
+                <li><a href="fashion_main.html">패션</a>
+                    <ul class="sub">
+                        <li><a href="fashion_trend.html">패션트렌드</a></li>
+                        <li><a href="fashion_tip.html">스타일링 팁</a></li>
+                        <li><a href="fashion_info.html">할인정보</a></li>
+                        <li><a href="fashion_codi.html">기온별 코디</a></li>
+                    </ul><!-- //.sub -->
+                </li>
+                <li><a href="../celeb/celeb_main.html">셀럽 애정템</a>
+                </li>
+                <li><a href="../store/store_main.html">스토어</a>
+                </li>
+                <li><a href="../subs/subs_main.html">구독하기</a>
+                </li>
+                <li><a href="../mypage/mypage_main.html">마이페이지</a>
+                </li>
+            </ul>
+        </div><!-- //.gnb -->
+        <div class="sns">
+            <ul>
+                <li><a href="#"><img src="../img/sns1.png" alt="instagram"></a></li>
+                <li><a href="#"><img src="../img/sns2.png" alt="youtube"></a></li>
+                <li><a href="#"><img src="../img/sns3.png" alt="facebook"></a></li>
+            </ul>
+        </div><!-- //.sns -->
+        <ul class="us">
+            <li><a href="#">고객센터</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">광고·제휴 문의</a></li>
+            <li><a href="#">윤리경영</a></li>
+        </ul><!-- //.us -->
+    </div><!-- //.fix -->
+    <nav>
+        <div class="inner">
+            <div class="nav_top">
+                <div class="nav_left">
+                    이나라님, 반갑습니다.
+                </div><!-- //.nav_left -->
+                <div class="nav_right">
+                    <div class="sel">
+                        <p>
+                            <strong>KOR</strong>
+                            <span class="material-symbols-outlined">
+                                keyboard_arrow_down
+                            </span>
+                        </p>
+                        <ul>
+                            <li><a href="#"><strong>ENG</strong></a></li>
+                            <li><a href="#"><strong>JPN</strong></a></li>
+                        </ul>
+                    </div><!-- //.sel -->
+                    <a href="../login/login.html" class="login">
+                        <p>LOG OUT</p>
+                        <span class="material-symbols-outlined">
+                            logout
+                        </span>
+                    </a>
+                </div><!-- //.nav_right -->
+            </div><!-- //.nav_top -->
+            <div class="nav_middle">
+                <div class="logo">
+                    <h1><a href="../index.html"><img src="../img/logo.png" alt="La MUSE"></a></h1>
+                </div><!-- //.logo -->
+                <div class="nav_right">
+                    <div class="sel">
+                        <p>
+                            <strong>KOR</strong>
+                            <span class="material-symbols-outlined">
+                                keyboard_arrow_down
+                            </span>
+                        </p>
+                        <ul>
+                            <li><a href="#"><strong>ENG</strong></a></li>
+                            <li><a href="#"><strong>JPN</strong></a></li>
+                        </ul>
+                    </div><!-- //.sel -->
+                    <a href="../login/login.html" class="login">
+                        <p>LOG OUT</p>
+                        <span class="material-symbols-outlined">
+                            logout
+                        </span>
+                    </a>
+                </div><!-- //.nav_right -->
+            </div>
+            <div class="nav_bottom">
+                <div class="logo">
+                    <h1><a href="../index.html"><img src="../img/logo.png" alt="La MUSE"></a></h1>
+                </div><!-- //.logo -->
+                <ul class="gnb">
+                    <li><a href="../beauty/beauty_main.html">뷰티</a>
+                        <ul class="sub">
+                            <li><a href="../beauty/beauty_trend.html">뷰티트렌드</a></li>
+                            <li><a href="../beauty/beauty_sol.html">뷰티솔루션</a></li>
+                            <li><a href="../beauty/beauty_compare.html">저렴이vs고렴이</a></li>
+                            <li><a href="../beauty/beauty_vid.html">영상 속 제품</a></li>
+                        </ul><!-- //.sub -->
+                    </li>
+                    <li><a href="fashion_main.html">패션</a>
+                        <ul class="sub">
+                            <li><a href="fashion_trend.html">패션트렌드</a></li>
+                            <li><a href="fashion_tip.html">스타일링 팁</a></li>
+                            <li><a href="fashion_info.html">할인정보</a></li>
+                            <li><a href="fashion_codi.html">기온별 코디</a></li>
+                        </ul><!-- //.sub -->
+                    </li>
+                    <li><a href="../celeb/celeb_main.html">셀럽애정템</a>
+                    </li>
+                    <li><a href="../store/store_main.html">스토어</a>
+                    </li>
+                    <li><a href="../subs/subs_main.html">구독하기</a>
+                    </li>
+                    <li><a href="../mypage/mypage_main.html">마이페이지</a></li>
+                </ul><!-- //.gnb -->
+
+                <div class="nv_right">
+                    <div class="search">
+                        <input type="text" placeholder="제목, 내용을 입력해주세요">
+                        <a href="#">
+                            <span class="material-symbols-outlined">
+                                search
+                            </span>
+                        </a>
+                    </div><!-- //.search -->
+                    <div class="ham">
+                        <span class="material-symbols-outlined menu">
+                            menu
+                        </span>
+                        <span class="material-symbols-outlined x">
+                            close
+                        </span>
+                    </div><!-- //.ham -->
+                </div><!-- //.nv_right -->
+            </div><!-- //.nav_bottom -->
+        </div><!-- //.inner -->
+    </nav>
+
+    <div class="tag_sub_wrap">
+        <div class="tag_sub inner">
+            <a href="fashion_main.html" class="high">
+                패션
+                <span class="material-symbols-outlined">
+                    chevron_right
+                </span>
+            </a>
+            <a href="fashion_trend.html" class="low">올해 트렌드</a>
+        </div><!-- //.tag_sub -->
+    </div>
+
+    <div class="sub_main_title inner">
+        <h5>발레코어, 슈즈까지 나왔다고?</h5>
+        <div class="title_one">
+            <p>by 이나라</p>
+            <p>2025. 08. 12</p>
+        </div><!-- //.title_one -->
+        <div class="icons">
+            <div class="icon">
+                    <span class="material-symbols-outlined">
+                        inbox
+                    </span>
+            </div><!-- //.icon -->
+            <div class="icon">
+                    <span class="material-symbols-outlined">
+                        share
+                    </span>
+            </div><!-- //.icon -->
+        </div><!-- //.icons -->
+    </div><!-- //.sub_main_title -->
+
+    <div class="sub_text left inner">
+        <h2 class="left">01</h2>
+        <div class="sub_text_body">
+            <div class="txt">
+                <h6>발레코어, 무대에서 거리로 내려오다</h6>
+                <div class="txt_body body_article">
+                    발레코어는 발레리나의 우아한 무드와 디테일을 일상에 녹여낸 스타일이다.<br>
+                    특히 슈즈는 이 트렌드의 중심.<br>
+                    리본 스트랩, 둥근 앞코, 부드러운 새틴이나 매트한 소재는 걸음마다 낭만을 더한다.<br><br>
+                    단순한 '예쁜 신발'이 아니라, 나를 섬세하게 표현하는 방식으로 발레코어 슈즈는 선택되고 있다.
+                </div><!-- //.txt_body -->
+            </div><!-- //.txt -->
+            <img src="../img/fashion_trend_detail_img1.png" alt="발레코어">
+        </div><!-- //.sub_text_body -->
+    </div><!-- //.sub_text1 -->
+
+    <div class="sub_text right inner">
+        <div class="sub_text_body">
+            <img src="../img/fashion_trend_detail_img2.png" alt="발레코어의핵심요소">
+            <h2 class="right">02</h2>
+            <div class="txt">
+                <h6>리본, 스트랩, 새틴 : 발레코어의 핵심 요소
+                </h6>
+                <div class="txt_body body_article">
+                    발레코어 슈즈의 디테일은 단순함 속의 정교함이다.<br>
+                    발목을 감싸는 리본, 부드러운 광택이 감도는 새틴 소재, 플랫한 굽까지.<br><br>
+                    전체적인 실루엣은 소녀적인 동시에 클래식하다.<br>
+                    이런 요소들이 모여 발레리나처럼 가볍고 부드러운 인상을 만든다.<br>
+                    오버하지 않아도 충분히 눈에 띄는 이유다.
+                </div><!-- //.txt_body -->
+
+            </div><!-- //.txt -->
+            <img src="../img/fashion_trend_detail_img2.png" alt="발레코어의핵심요소">
+        </div><!-- //.sub_text_body -->
+        <h2 class="right">02</h2>
+    </div><!-- //.sub_text 순서만 바꾼 버전 -->
+
+    <div class="sub_text left inner">
+        <h2 class="left">03</h2>
+        <div class="sub_text_body">
+            <div class="txt">
+                <h6>
+                    어떻게 신을까? 발레코어 스타일링 팁
+                </h6>
+                <div class="txt_body body_article">
+                    발레코어 슈즈는 플리츠 스커트나 시스루 양말과 찰떡궁합이다.<br>
+                    캐주얼하게는 데님과 매치해도 좋고,<br>
+                    스웻셔츠와 함께 믹스매치하면 신선한 느낌을 줄 수 있다.<br><br>
+                    발레코어는 '페미닌'이라는 틀을 고정하지 않는다.<br>
+                    그 자체로 자유로운 감성의 상징이기 때문이다.
+                </div><!-- //.txt_body -->
+                <!-- <div class="tip">
+                    <div class="tag">활용팁</div>
+                    · &nbsp;드레스나 미니스커트에 로맨틱한 무드로 매치하거나, 청바지와 함께 사랑스러운 캐주얼 룩으로 스타일링.<br>
+                    · &nbsp;드레스나 미니스커트에 로맨틱한 무드로 매치하거나, 청바지와 함께 사랑스러운 캐주얼 룩으로 스타일링.
+                </div> -->
+            </div><!-- //.txt -->
+            <img src="../img/fashion_trend_detail_img3.png" alt="발레코어">
+        </div><!-- //.sub_text_body -->
+    </div><!-- //.sub_text1 -->
+
+    <div class="sub_text right inner">
+        <div class="sub_text_body">
+            <img src="../img/fashion_trend_detail_img4.png" alt="슈즈브랜드">
+            <h2 class="right">04</h2>
+            <div class="txt">
+                <h6>지금 가장 주목해야 할 발레코어 슈즈 브랜드
+                </h6>
+                <div class="txt_body body_article">
+                    Maison Lam의 타비 플랫, Mus의 발레 슈즈 라인은 발레코어 감성의 대표주자다.<br>
+                    국내 브랜드로는 Dal, Maru에서도 세련된 발레코어 무드를 구현한 제품들을 찾을 수 있다.<br><br>
+                    부담없이 시작하고 싶다면, SPA 브랜드에서 트렌디한 입문템을 쉽게 구할 수 있다.
+                </div><!-- //.txt_body -->
+            </div><!-- //.txt -->
+            <img src="../img/fashion_trend_detail_img4.png" alt="슈즈브랜드">
+        </div><!-- //.sub_text_body -->
+        <h2 class="right">04</h2>
+    </div><!-- //.sub_text 순서만 바꾼 버전 -->
+
+    <div class="banner inner">
+        <a href="../subs/subs_main.html">
+            <div class="banner_text">
+                <div class="by">
+                    서점에 가지 않아도, 정기구독 한 번으로 매달 받아보세요
+                </div>
+                <div class="ad">
+                    매달 최신 트렌드를 <span>집 앞</span>까지
+                </div><!-- //.ad -->
+            </div><!-- //.banner_text -->
+            <span class="material-symbols-outlined right">
+                arrow_forward_ios
+            </span>
+            <div class="bannerimg">
+                <img src="../img/banner.png" alt="배너">
+            </div><!-- //.bannerimg -->
+        </a>
+    </div><!-- //.banner -->
+
+    <div class="more inner">
+        <div class="more_title">
+            패션트렌드 더 알아보기
+        </div><!-- //.more_title -->
+        <div class="more_contents">
+            <div class="more_small">
+                <a href="#">
+                    <ul>
+                        <li><img src="../img/fashion_trend_detail_img5.png" alt="신발"></li>
+                        <li class="name">
+                            슬림하고 세련된, 슬로우 프로파일 신발 시대
+                        </li>
+                    </ul>
+                </a>
+            </div><!-- //.more_small -->
+            <div class="more_small">
+                <a href="#">
+                    <ul>
+                        <li><img src="../img/fashion_trend_detail_img6.png" alt="스트랩"></li>
+                        <li class="name">
+                            귀엽거나 시크하게, 스트랩으로 완성
+                        </li>
+                    </ul>
+                </a>
+            </div><!-- //.more_small -->
+            <div class="more_small no">
+                <a href="#">
+                    <ul>
+                        <li><img src="../img/fashion_trend_detail_img7.png" alt="슈즈"></li>
+                        <li class="name">
+                            햇살과 가장 잘 어울리는 슈즈
+                        </li>
+                    </ul>
+                </a>
+            </div><!-- //.more_small -->
+        </div><!-- //.more_contents -->
+    </div><!-- //.more -->
+
+    <footer>
+        <div class="f_contents inner">
+            <div class="top">
+                <ul>
+                    <li><a href="#">고객센터</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">광고·제휴 문의</a></li>
+                    <li><a href="#">윤리경영</a></li>
+                </ul>
+            </div><!-- //.top -->
+            <div class="f_middle">
+                <div class="logo">
+                    <a href="../index.html">
+                        <img src="../img/footer_logo.png" alt="LaMUSE">
+                    </a>
+                </div><!-- //.logo -->
+                <div class="sns">
+                    <ul>
+                        <li><a href="#"><img src="../img/sns1.png" alt="instagram"></a></li>
+                        <li><a href="#"><img src="../img/sns2.png" alt="youtube"></a></li>
+                        <li><a href="#"><img src="../img/sns3.png" alt="facebook"></a></li>
+                    </ul>
+                </div><!-- //.sns -->
+            </div><!-- //.f_middle -->
+            <div class="copy">
+                © 2025 LaMUSE. All Rights Reserved.
+            </div><!-- //.copy -->
+        </div><!-- //.f_contents -->
+    </footer>
+</body>
+
+</html>

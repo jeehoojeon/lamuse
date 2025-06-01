@@ -1,0 +1,106 @@
+@charset "utf-8";
+@media screen and (max-width: 1024px) {
+    .container {
+        padding: 60px 0;
+    }
+
+    .signup_con label {
+        font-size: 24px;
+    }
+
+    .signup_con input[type="text"],
+    .signup_con input[type="password"],
+    .signup_con input[type="email"],
+    .signup_con input[type="tel"],
+    .signup_con input[type="number"] {
+        padding: 16.5px 16px;
+    }
+
+    .signup_con input::placeholder {
+        font-size: 16px;
+    }
+
+    .join2_number {
+        padding: 7px 16px;
+
+    }
+
+    .join2_number button {
+        font-size: 18px;
+
+    }
+
+    .join2_terms li {
+        padding: 12px 12px;
+    }
+
+    .join2_terms .age_check,
+    .join2_terms .terms_check {
+        font-size: 18px;
+        font-weight: 600;
+
+    }
+
+    .join2_go a {
+        height: 53px;
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    .container {
+        padding: 36px 16px;
+    }
+
+    .join_wrap h6 {
+        font-size: 28px;
+    }
+
+    .signup_con label {
+        font-size: 24px;
+    }
+
+    .signup_con input[type="text"],
+    .signup_con input[type="password"],
+    .signup_con input[type="email"],
+    .signup_con input[type="tel"],
+    .signup_con input[type="number"] {
+        padding: 14px 16px;
+    }
+
+    .signup_con input::placeholder {
+        font-size: 14px;
+    }
+
+    .join2_number {
+        padding: 5.5px 16px;
+
+    }
+
+    .join2_number button {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .join2_terms li {
+        padding: 9.5px 12px;
+
+    }
+
+
+
+    .join2_terms .age_check,
+    .join2_terms .terms_check {
+        font-size: 16px;
+        font-weight: 600;
+
+    }
+
+    .join2_go a {
+        height: 48px;
+        font-size: 16px;
+
+    }
+
+}

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="가볍게 즐기는 뷰티 매거진 구독 서비스입니다.">
+    <meta name="keywords" content="뷰티, 트렌드, 매거진, 구독">
+    <meta name="author" content="myojo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La MUSE : Beauty</title>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="favicon">
+    <!-- 구글 아이콘 연결 -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <!-- AOS css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/common_media.css">
+    <link rel="stylesheet" href="../css/commonlayout.css">
+    <link rel="stylesheet" href="../css/CLM.css">
+
+    <!-- AOS js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-simplyscroll/2.1.1/jquery.simplyscroll.min.js"></script>
+    <script src="../js/common.js" defer></script>
+    <script src="../js/commonlayout.js" defer></script>
+</head>
+
+<body>
+    <div class="aside inner">
+<!--         <aside class="chat">
+            <span class="material-symbols-outlined">
+                chat_bubble
+            </span>
+        </aside> -->
+        <aside class="up">
+            <a href="#"><span class="material-symbols-outlined">
+                    arrow_upward
+                </span></a>
+        </aside>
+    </div><!-- //.aside -->
+    <div class="fix">
+        <img src="../img/side_bg.png" alt="la muse" class="logo">
+        <div class="search">
+            <input type="text" placeholder="제목, 내용을 입력해주세요">
+            <a href="#">
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+            </a>
+        </div><!-- //.search -->
+        <div class="gnb">
+            <ul>
+                <li><a href="beauty_main.html">뷰티</a>
+                    <ul class="sub">
+                        <li><a href="beauty_trend.html">뷰티트렌드</a></li>
+                        <li><a href="beauty_sol.html">뷰티솔루션</a></li>
+                        <li><a href="beauty_compare.html">저렴이vs고렴이</a></li>
+                        <li><a href="beauty_vid.html">영상 속 제품</a></li>
+                    </ul><!-- //.sub -->
+                </li>
+                <li><a href="../fashion/fashion_main.html">패션</a>
+                    <ul class="sub">
+                        <li><a href="../fashion/fashion_trend.html">패션트렌드</a></li>
+                        <li><a href="../fashion/fashion_tip.html">스타일링 팁</a></li>
+                        <li><a href="../fashion/fashion_info.html">할인정보</a></li>
+                        <li><a href="../fashion/fashion_codi.html">기온별 코디</a></li>
+                    </ul><!-- //.sub -->
+                </li>
+                <li><a href="../celeb/celeb_main.html">셀럽 애정템</a>
+                </li>
+                <li><a href="../store/store_main.html">스토어</a>
+                </li>
+                <li><a href="../subs/subs_main.html">구독하기</a>
+                </li>
+                <li><a href="../mypage/mypage_main.html">마이페이지</a>
+                </li>
+            </ul>
+        </div><!-- //.gnb -->
+        <div class="sns">
+            <ul>
+                <li><a href="#"><img src="../img/sns1.png" alt="instagram"></a></li>
+                <li><a href="#"><img src="../img/sns2.png" alt="youtube"></a></li>
+                <li><a href="#"><img src="../img/sns3.png" alt="facebook"></a></li>
+            </ul>
+        </div><!-- //.sns -->
+        <ul class="us">
+            <li><a href="#">고객센터</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">광고·제휴 문의</a></li>
+            <li><a href="#">윤리경영</a></li>
+        </ul><!-- //.us -->
+    </div><!-- //.fix -->
+    <nav>
+        <div class="inner">
+            <div class="nav_top">
+                <div class="nav_left">
+                    이나라님, 반갑습니다.
+                </div><!-- //.nav_left -->
+                <div class="nav_right">
+                    <div class="sel">
+                        <p>
+                            <strong>KOR</strong>
+                            <span class="material-symbols-outlined">
+                                keyboard_arrow_down
+                            </span>
+                        </p>
+                        <ul>
+                            <li><a href="#"><strong>ENG</strong></a></li>
+                            <li><a href="#"><strong>JPN</strong></a></li>
+                        </ul>
+                    </div><!-- //.sel -->
+                    <a href="../login/login.html" class="login">
+                        <p>LOG OUT</p>
+                        <span class="material-symbols-outlined">
+                            logout
+                        </span>
+                    </a>
+                </div><!-- //.nav_right -->
+            </div><!-- //.nav_top -->
+            <div class="nav_middle">
+                <div class="logo">
+                    <h1><a href="../index.html"><img src="../img/logo.png" alt="La MUSE"></a></h1>
+                </div><!-- //.logo -->
+                <div class="nav_right">
+                    <div class="sel">
+                        <p>
+                            <strong>KOR</strong>
+                            <span class="material-symbols-outlined">
+                                keyboard_arrow_down
+                            </span>
+                        </p>
+                        <ul>
+                            <li><a href="#"><strong>ENG</strong></a></li>
+                            <li><a href="#"><strong>JPN</strong></a></li>
+                        </ul>
+                    </div><!-- //.sel -->
+                    <a href="../login/login.html" class="login">
+                        <p>LOG OUT</p>
+                        <span class="material-symbols-outlined">
+                            logout
+                        </span>
+                    </a>
+                </div><!-- //.nav_right -->
+            </div>
+            <div class="nav_bottom">
+                <div class="logo">
+                    <h1><a href="../index.html"><img src="../img/logo.png" alt="La MUSE"></a></h1>
+                </div><!-- //.logo -->
+                <ul class="gnb">
+                    <li><a href="beauty_main.html">뷰티</a>
+                        <ul class="sub">
+                            <li><a href="beauty_trend.html">뷰티트렌드</a></li>
+                            <li><a href="beauty_sol.html">뷰티솔루션</a></li>
+                            <li><a href="beauty_compare.html">저렴이vs고렴이</a></li>
+                            <li><a href="beauty_vid.html">영상 속 제품</a></li>
+                        </ul><!-- //.sub -->
+                    </li>
+                    <li><a href="../fashion/fashion_main.html">패션</a>
+                        <ul class="sub">
+                            <li><a href="../fashion/fashion_trend.html">패션트렌드</a></li>
+                            <li><a href="../fashion/fashion_tip.html">스타일링 팁</a></li>
+                            <li><a href="../fashion/fashion_info.html">할인정보</a></li>
+                            <li><a href="../fashion/fashion_codi.html">기온별 코디</a></li>
+                        </ul><!-- //.sub -->
+                    </li>
+                    <li><a href="../celeb/celeb_main.html">셀럽애정템</a>
+                    </li>
+                    <li><a href="../store/store_main.html">스토어</a>
+                    </li>
+                    <li><a href="../subs/subs_main.html">구독하기</a>
+                    </li>
+                    <li><a href="../mypage/mypage_main.html">마이페이지</a></li>
+                </ul><!-- //.gnb -->
+
+                <div class="nv_right">
+                    <div class="search">
+                        <input type="text" placeholder="제목, 내용을 입력해주세요">
+                        <a href="#">
+                            <span class="material-symbols-outlined">
+                                search
+                            </span>
+                        </a>
+                    </div><!-- //.search -->
+                    <div class="ham">
+                        <span class="material-symbols-outlined menu">
+                            menu
+                        </span>
+                        <span class="material-symbols-outlined x">
+                            close
+                        </span>
+                    </div><!-- //.ham -->
+                </div><!-- //.nv_right -->
+            </div><!-- //.nav_bottom -->
+        </div><!-- //.inner -->
+    </nav>
+
+    <div class="tag_sub_wrap">
+        <div class="tag_sub inner">
+            <a href="./beauty_main.html" class="high">
+                뷰티
+                <span class="material-symbols-outlined">
+                    chevron_right
+                </span>
+            </a>
+            <div class="low">
+                <a href="beauty_sol.html">뷰티 솔루션</a>
+            </div><!-- //.low -->
+        </div><!-- //.tag_sub -->
+    </div>
+
+    <div class="sub_main_title inner">
+        <h5>넓어진 모공, 어떻게 없앨까?</h5>
+        <div class="title_one">
+            <p>by 김민지</p>
+            <p>2025. 09 .12</p>
+        </div><!-- //.title_one -->
+        <div class="icons">
+            <div class="icon">
+                    <span class="material-symbols-outlined">
+                        inbox
+                    </span>
+            </div><!-- //.icon -->
+            <div class="icon">
+                    <span class="material-symbols-outlined">
+                        share
+                    </span>
+            </div><!-- //.icon -->
+        </div><!-- //.icons -->
+    </div><!-- //.sub_main_title -->
+
+    <div class="sub_text_v2 left inner">
+        <img src="../img/beauty_skin_detail_img1.png" alt="모공">
+        <div class="txt light_font_b">
+            모공은 한 번 넓어지면 다시 작아지기 어렵다고 하죠.<br>
+            하지만! 꾸준한 관리와 생활 습관 개선만으로<br>
+            눈에 띄지 않게 '채워 보이게' 만들 수 있어요.<br>
+            오늘부터 모공 탄탄 루틴, 함께 시작해볼까요?
+        </div><!-- //.txt -->
+    </div><!-- //.sub_text_v2 -->
+
+    <div class="sub_text_v3 inner">
+        <div class="sub_text_v3_small">
+            <ul>
+                <li><img src="../img/beauty_skin_detail_img2.png" alt="클렌징"></li>
+                <li>
+                    <div class="body_article">
+                        <span>1. 클렌징</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="body_article">
+                        모공이 넓어지는 원인 중 하나는 피지와 노폐물!<br>
+                        딥클렌징 전용 제품으로 모공 속까지 깨끗하게.<br>
+                        폼->패드->토너 순으로 관리해주면 기초부터 다르게 느껴져요.
+                    </div>
+                </li>
+            </ul>
+        </div><!-- //.sub_text_v3_small -->
+        <div class="sub_text_v3_small">
+            <ul>
+                <li><img src="../img/beauty_skin_detail_img3.png" alt="수분관리"></li>
+                <li>
+                    <div class="body_article">
+                        <span>2. 수분관리</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="body_article">
+                        피부가 건조하면 피지 분비가 늘어나 모공이 커질 수 있어요.<br>
+                        가볍고 수분감 높은 토너와 크림으로 피부 속까지 촉촉하게 관리해 주세요.
+                    </div>
+                </li>
+            </ul>
+        </div><!-- //.sub_text_v3_small -->
+        <div class="sub_text_v3_small">
+            <ul>
+                <li><img src="../img/beauty_skin_detail_img4.png" alt="자외선차단"></li>
+                <li>
+                    <div class="body_article">
+                        <span>3. 자외선 차단</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="body_article">
+                        자외선은 피부 탄력을 떨어뜨려 모공을 더욱 늘어지게 만들어요.<br>
+                        외출 전엔 계절과 날씨에 상관없이 자외선 차단제를 꼭 발라야 해요.
+                    </div>
+                </li>
+            </ul>
+        </div><!-- //.sub_text_v3_small -->
+    </div><!-- //.sub_text_v3 -->
+
+    <div class="sub_text_v2 right inner">
+        <img src="../img/beauty_skin_detail_img5.png" alt="모공">
+        <div class="txt light_font_b">
+            모공은 탄력이 떨어지면 더 쉽게 늘어나 보여요.<br>
+            레티놀, 펩타이드, 콜라겐 성분이 들어간<br>
+            탄력 케어 제품을 꾸준히 써보세요.<br>
+            모공 주변 피부를 탱탱하게 잡아주는 게<br>
+            '채워 보이는' 가장 확실한 방법이에요!
+        </div><!-- //.txt -->
+        <img src="../img/beauty_skin_detail_img5.png" alt="모공">
+    </div><!-- //.sub_text_v2 -->
+
+    <div class="sub_text_v4 inner">
+        <ul>
+            <li><img src="../img/beauty_skin_detail_img6.png" alt="딥클렌징"></li>
+            <li><img src="../img/beauty_skin_detail_img7.png" alt="수분충전"></li>
+            <li><img src="../img/beauty_skin_detail_img8.png" alt="진정케어"></li>
+        </ul>
+        <div class="body_article">
+            <span>TIP</span> : 모공 관리, 이렇게만 기억하세요<br>
+            딥클렌징->수분충전->진정케어<br>
+            자극은 줄이고, 꾸준함은 늘리고! 모공은 '없애는'게 아니라 '눈에 띄지 않게 채우는 것'이 포인트!<br>
+            피부, 다시 매끈해질 수 있어요.
+        </div>
+    </div><!-- //.sub_text_v4 -->
+
+    <div class="banner inner">
+        <a href="../subs/subs_main.html">
+            <div class="banner_text">
+                <div class="ad">
+                    구독하고 매달 최신 트렌드 <span>배송</span>받기
+                </div><!-- //.ad -->
+                <div class="by">
+                    직접 찾아보지 않아도 라뮤즈가 배송해드려요
+                </div>
+            </div><!-- //.banner_text -->
+            <span class="material-symbols-outlined right">
+                arrow_forward_ios
+            </span>
+            <div class="bannerimg">
+                <img src="../img/banner2.png" alt="배너">
+            </div><!-- //.bannerimg -->
+        </a>
+    </div><!-- //.banner -->
+
+    <div class="more inner">
+        <div class="more_title">
+            뷰티 솔루션 더 알아보기
+        </div><!-- //.more_title -->
+        <div class="more_contents">
+            <div class="more_small">
+                <a href="#">
+                    <ul>
+                        <li><img src="../img/beauty_skin_detail_img9.png" alt="트러블자국"></li>
+                        <li class="name">
+                            트러블 자국, 색소침착 되기 전에 할 일
+                        </li>
+                    </ul>
+                </a>
+            </div><!-- //.more_small -->
+            <div class="more_small">
+                <a href="#">
+                    <ul>
+                        <li><img src="../img/beauty_skin_detail_img10.png" alt="기초케어순서"></li>
+                        <li class="name">
+                            기초케어 순서, 잘못하면 역효과?
+                        </li>
+                    </ul>
+                </a>
+            </div><!-- //.more_small -->
+            <div class="more_small no">
+                <a href="#">
+                    <ul>
+                        <li><img src="../img/beauty_skin_detail_img11.png" alt="겨울철유분폭발"></li>
+                        <li class="name">
+                            겨울철 유분폭발, 왜 생길까?
+                        </li>
+                    </ul>
+                </a>
+            </div><!-- //.more_small -->
+        </div><!-- //.more_contents -->
+    </div><!-- //.more -->
+
+    <footer>
+        <div class="f_contents inner">
+            <div class="top">
+                <ul>
+                    <li><a href="#">고객센터</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">광고·제휴 문의</a></li>
+                    <li><a href="#">윤리경영</a></li>
+                </ul>
+            </div><!-- //.top -->
+            <div class="f_middle">
+                <div class="logo">
+                    <a href="../index.html">
+                        <img src="../img/footer_logo.png" alt="LaMUSE">
+                    </a>
+                </div><!-- //.logo -->
+                <div class="sns">
+                    <ul>
+                        <li><a href="#"><img src="../img/sns1.png" alt="instagram"></a></li>
+                        <li><a href="#"><img src="../img/sns2.png" alt="youtube"></a></li>
+                        <li><a href="#"><img src="../img/sns3.png" alt="facebook"></a></li>
+                    </ul>
+                </div><!-- //.sns -->
+            </div><!-- //.f_middle -->
+            <div class="copy">
+                © 2025 LaMUSE. All Rights Reserved.
+            </div><!-- //.copy -->
+        </div><!-- //.f_contents -->
+    </footer>
+</body>
+
+</html>

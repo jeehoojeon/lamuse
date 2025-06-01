@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="가볍게 즐기는 뷰티 매거진 구독 서비스입니다.">
+    <meta name="keywords" content="뷰티, 트렌드, 매거진, 구독">
+    <meta name="author" content="myojo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La MUSE : Celeb</title>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="favicon">
+    <!-- 구글 아이콘 연결 -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <!-- AOS css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/common_media.css">
+    <link rel="stylesheet" href="../css/commonlayout.css">
+    <link rel="stylesheet" href="../css/CLM.css">
+
+    <!-- AOS js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-simplyscroll/2.1.1/jquery.simplyscroll.min.js"></script>
+    <script src="../js/common.js" defer></script>
+    <script src="../js/commonlayout.js" defer></script>
+</head>
+
+<body>
+    <div class="aside inner">
+        <!--         <aside class="chat">
+            <span class="material-symbols-outlined">
+                chat_bubble
+            </span>
+        </aside> -->
+        <aside class="up">
+            <a href="#"><span class="material-symbols-outlined">
+                    arrow_upward
+                </span></a>
+        </aside>
+    </div><!-- //.aside -->
+    <div class="fix">
+        <img src="../img/side_bg.png" alt="la muse" class="logo">
+        <div class="search">
+            <input type="text" placeholder="제목, 내용을 입력해주세요">
+            <a href="#">
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+            </a>
+        </div><!-- //.search -->
+        <div class="gnb">
+            <ul>
+                <li><a href="../beauty/beauty_main.html">뷰티</a>
+                    <ul class="sub">
+                        <li><a href="../beauty/beauty_trend.html">뷰티트렌드</a></li>
+                        <li><a href="../beauty/beauty_sol.html">뷰티솔루션</a></li>
+                        <li><a href="../beauty/beauty_compare.html">저렴이vs고렴이</a></li>
+                        <li><a href="../beauty/beauty_vid.html">영상 속 제품</a></li>
+                    </ul><!-- //.sub -->
+                </li>
+                <li><a href="../fashion/fashion_main.html">패션</a>
+                    <ul class="sub">
+                        <li><a href="../fashion/fashion_trend.html">패션트렌드</a></li>
+                        <li><a href="../fashion/fashion_tip.html">스타일링 팁</a></li>
+                        <li><a href="../fashion/fashion_info.html">할인정보</a></li>
+                        <li><a href="../fashion/fashion_codi.html">기온별 코디</a></li>
+                    </ul><!-- //.sub -->
+                </li>
+                <li><a href="celeb_main.html">셀럽 애정템</a>
+                </li>
+                <li><a href="../store/store_main.html">스토어</a>
+                </li>
+                <li><a href="../subs/subs_main.html">구독하기</a>
+                </li>
+                <li><a href="../mypage/mypage_main.html">마이페이지</a>
+                </li>
+            </ul>
+        </div><!-- //.gnb -->
+        <div class="sns">
+            <ul>
+                <li><a href="#"><img src="../img/sns1.png" alt="instagram"></a></li>
+                <li><a href="#"><img src="../img/sns2.png" alt="youtube"></a></li>
+                <li><a href="#"><img src="../img/sns3.png" alt="facebook"></a></li>
+            </ul>
+        </div><!-- //.sns -->
+        <ul class="us">
+            <li><a href="#">고객센터</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">광고·제휴 문의</a></li>
+            <li><a href="#">윤리경영</a></li>
+        </ul><!-- //.us -->
+    </div><!-- //.fix -->
+    <nav>
+        <div class="inner">
+            <div class="nav_top">
+                <div class="nav_left">
+                    이나라님, 반갑습니다.
+                </div><!-- //.nav_left -->
+                <div class="nav_right">
+                    <div class="sel">
+                        <p>
+                            <strong>KOR</strong>
+                            <span class="material-symbols-outlined">
+                                keyboard_arrow_down
+                            </span>
+                        </p>
+                        <ul>
+                            <li><a href="#"><strong>ENG</strong></a></li>
+                            <li><a href="#"><strong>JPN</strong></a></li>
+                        </ul>
+                    </div><!-- //.sel -->
+                    <a href="../login/login.html" class="login">
+                        <p>LOG OUT</p>
+                        <span class="material-symbols-outlined">
+                            logout
+                        </span>
+                    </a>
+                </div><!-- //.nav_right -->
+            </div><!-- //.nav_top -->
+            <div class="nav_middle">
+                <div class="logo">
+                    <h1><a href="../index.html"><img src="../img/logo.png" alt="La MUSE"></a></h1>
+                </div><!-- //.logo -->
+                <div class="nav_right">
+                    <div class="sel">
+                        <p>
+                            <strong>KOR</strong>
+                            <span class="material-symbols-outlined">
+                                keyboard_arrow_down
+                            </span>
+                        </p>
+                        <ul>
+                            <li><a href="#"><strong>ENG</strong></a></li>
+                            <li><a href="#"><strong>JPN</strong></a></li>
+                        </ul>
+                    </div><!-- //.sel -->
+                    <a href="../login/login.html" class="login">
+                        <p>LOG OUT</p>
+                        <span class="material-symbols-outlined">
+                            logout
+                        </span>
+                    </a>
+                </div><!-- //.nav_right -->
+            </div>
+            <div class="nav_bottom">
+                <div class="logo">
+                    <h1><a href="../index.html"><img src="../img/logo.png" alt="La MUSE"></a></h1>
+                </div><!-- //.logo -->
+                <ul class="gnb">
+                    <li><a href="../beauty/beauty_main.html">뷰티</a>
+                        <ul class="sub">
+                            <li><a href="../beauty/beauty_trend.html">뷰티트렌드</a></li>
+                            <li><a href="../beauty/beauty_sol.html">뷰티솔루션</a></li>
+                            <li><a href="../beauty/beauty_compare.html">저렴이vs고렴이</a></li>
+                            <li><a href="../beauty/beauty_vid.html">영상 속 제품</a></li>
+                        </ul><!-- //.sub -->
+                    </li>
+                    <li><a href="../fashion/fashion_main.html">패션</a>
+                        <ul class="sub">
+                            <li><a href="../fashion/fashion_trend.html">패션트렌드</a></li>
+                            <li><a href="../fashion/fashion_tip.html">스타일링 팁</a></li>
+                            <li><a href="../fashion/fashion_info.html">할인정보</a></li>
+                            <li><a href="../fashion/fashion_codi.html">기온별 코디</a></li>
+                        </ul><!-- //.sub -->
+                    </li>
+                    <li><a href="celeb_main.html">셀럽애정템</a>
+                    </li>
+                    <li><a href="../store/store_main.html">스토어</a>
+                    </li>
+                    <li><a href="../subs/subs_main.html">구독하기</a>
+                    </li>
+                    <li><a href="../mypage/mypage_main.html">마이페이지</a></li>
+                </ul><!-- //.gnb -->
+
+                <div class="nv_right">
+                    <div class="search">
+                        <input type="text" placeholder="제목, 내용을 입력해주세요">
+                        <a href="#">
+                            <span class="material-symbols-outlined">
+                                search
+                            </span>
+                        </a>
+                    </div><!-- //.search -->
+                    <div class="ham">
+                        <span class="material-symbols-outlined menu">
+                            menu
+                        </span>
+                        <span class="material-symbols-outlined x">
+                            close
+                        </span>
+                    </div><!-- //.ham -->
+                </div><!-- //.nv_right -->
+            </div><!-- //.nav_bottom -->
+        </div><!-- //.inner -->
+    </nav>
+
+    <div class="tag_sub_wrap celeb">
+        <div class="tag_sub inner">
+            <a href="celeb_main.html" class="high">
+                셀럽 애정템
+                <span class="material-symbols-outlined">
+                    chevron_right
+                </span>
+            </a>
+            <div class="low">
+                <a href="#">인스타스타</a>
+            </div>
+        </div><!-- //.tag_sub  -->
+    </div>
+
+    <div class="sub_main_title inner">
+        <h5>설아의 코랄 메이크업</h5>
+        <div class="title_one">
+            <p>by 김미연</p>
+            <p>2025. 07 .12</p>
+        </div><!-- //.title_one -->
+        <div class="icons">
+            <div class="icon">
+                <span class="material-symbols-outlined">
+                    inbox
+                </span>
+            </div><!-- //.icon -->
+            <div class="icon">
+                <span class="material-symbols-outlined">
+                    share
+                </span>
+            </div><!-- //.icon -->
+        </div><!-- //.icons -->
+    </div><!-- //.sub_main_title -->
+
+    <div class="celeb_begin inner">
+        <div class="celeb_img"></div>
+        <div class="name sokcho">
+            “뷰티 일상을 올리고 있는 크리에이터 설아입니다.<br>
+            광고 X 협찬X 찐 내돈내산 결제내역 공개 가능한 몇 통째 비우고 있는 찐 애정템, 소개해드릴게요.”
+        </div>
+    </div><!-- //.celeb_begin -->
+
+    <div class="celeb_title inner">
+        <h5 class="sokcho">상큼 코랄 메이크업 Q&A</h5>
+    </div><!-- //.celeb_title -->
+
+    <div class="sub_text_v2 left inner">
+        <img src="../img/celeb_detail_img2.png" alt="비비쿠션">
+        <div class="txt light_font_b celeb">
+            <span class="question">Q. 비비쿠션을 추천하셨는데 두껍고 건조하지 않나요?</span>
+            <div class="answer">
+                <span>A.</span> 저도 그래서 비비쿠션 고를 때 제일 중요하게 보는 게 <span>텍스처</span>예요.<br>
+                너무 매트하면 건조해지고, 너무 촉촉하면 무너질 때 얼룩이 지거든요.<br>
+                제가 추천하는 제품은 얇게 발리면서도 속은 촉촉하게 유지되는 타입이라
+                건성 피부에도 부담 없고 들뜸도 적어요.
+            </div><!-- //.answer -->
+        </div><!-- //.txt -->
+    </div><!-- //.sub_text_v2 -->
+
+    <div class="sub_text_v2 right inner">
+        <img src="../img/celeb_detail_img3.png" alt="메이크업">
+        <div class="txt light_font_b celeb">
+            <span class="question">Q. 추천해주신 브랜드들로는 어떤 메이크업 연출이 가능한가요?</span>
+            <div class="answer">
+                <span>A.</span> 저는 요즘 <span>톤온톤 메이크업</span>을 좋아해서,<br>
+                코랄 톤 블러셔에 비슷한 톤의 립을 매치해요.<br>
+                아이섀도우는 <span>누디한 브라운</span>이나 <span>살구빛 코랄</span>로 음영만 살짝 주면 전체적으로 화사하면서도 과하지 않은 메이크업이 완성돼요.
+            </div><!-- //.answer -->
+        </div><!-- //.txt -->
+        <img src="../img/celeb_detail_img3.png" alt="메이크업">
+    </div><!-- //.sub_text_v2 -->
+
+    <div class="sub_text_v2 left inner">
+        <img src="../img/celeb_detail_img4.png" alt="발색">
+        <div class="txt light_font_b celeb">
+            <span class="question">Q. 그런데 막상 써보면 발색이 너무 강하거나 약할 때도 많아요.<br>
+                그럴 땐 어떻게 조절하세요?</span>
+            <div class="answer">
+                <span>A.</span> 진짜 공감해요!<br>
+                저는 발색이 강한 제품은 손등에 한 번 덜어내서 양 조절을 하고,<br>
+                약한 제품은 베이스 깔기 전에 먼저 레이어링해서 톤을 쌓아줘요.<br>
+                그리고 너무 안 어울린다 싶으면 <span>입술 안쪽에만 발라 생기만 살리는 식</span>으로 활용해요.
+            </div><!-- //.answer -->
+        </div><!-- //.txt -->
+    </div><!-- //.sub_text_v2 -->
+
+    <div class="sub_text_v2 right inner">
+        <img src="../img/celeb_detail_img5.png" alt="데이트메이크업">
+        <div class="txt light_font_b celeb">
+            <span class="question">Q. 설아의 방식대로 하면 자연스럽고 예쁜 데이트 룩도 연출 가능할까요?</span>
+            <div class="answer">
+                <span>A.</span> 물론이죠! 너무 꾸민 느낌 없이 예뻐 보이고 싶을 땐 딱이에요.<br>
+                피부는 가볍게 정돈만 하고, 블러셔로 볼에 생기를 살짝 주고,<br>
+                입술은 촉촉한 틴트로 마무리하면 밝고 부드러운 인상을 줄 수 있어요.<br>
+                데이트뿐 아니라 <span>친구 만나러 나갈 때</span>도 자주 쓰는 조합이에요.
+            </div><!-- //.answer -->
+        </div><!-- //.txt -->
+        <img src="../img/celeb_detail_img5.png" alt="데이트메이크업">
+    </div><!-- //.sub_text_v2 -->
+
+
+    <div class="item_title inner">
+        <h5 class="sokcho">설아’s 애정템 list</h5>
+    </div><!-- //.celeb_title -->
+    <div class="celeb_item inner">
+        <div class="ci_left"></div>
+        <div class="ci_right">
+            <div class="ci_small">
+                <a href="../store/store_main.html">
+                    <ul>
+                        <li><img src="../img/celeb_detail_img7.png" alt="립스틱"></li>
+                        <li class="body_article">
+                            <div>Poco 듀이 립스틱</div>
+                            <div>#01 로즈</div>
+                        </li>
+                    </ul>
+                </a>
+            </div><!-- //.ci_small -->
+            <div class="ci_small">
+                <a href="../store/store_main.html">
+                    <ul>
+                        <li><img src="../img/celeb_detail_img8.png" alt="틴트"></li>
+                        <li class="body_article">
+                            <div>Flura 벨벳 틴트</div>
+                            <div>#03 코랄</div>
+                        </li>
+                    </ul>
+                </a>
+            </div><!-- //.ci_small -->
+            <div class="ci_small">
+                <a href="../store/store_main.html">
+                    <ul>
+                        <li><img src="../img/celeb_detail_img9.png" alt="아이섀도우"></li>
+                        <li class="body_article">
+                            <div>Poco 4구 아이섀도우</div>
+                            <div>#04 오렌지 코랄</div>
+                        </li>
+                    </ul>
+                </a>
+            </div><!-- //.ci_small -->
+            <div class="ci_small">
+                <a href="../store/store_main.html">
+                    <ul>
+                        <li><img src="../img/celeb_detail_img10.png" alt="아이라이너"></li>
+                        <li class="body_article">
+                            <div>Momen 아이라이너</div>
+                            <div>#02 모카</div>
+                        </li>
+                    </ul>
+                </a>
+            </div><!-- //.ci_small -->
+            <div class="ci_small">
+                <a href="../store/store_main.html">
+                    <ul>
+                        <li><img src="../img/celeb_detail_img11.png" alt="블러셔"></li>
+                        <li class="body_article">
+                            <div>Mia 블러셔</div>
+                            <div>#05 피치핑크</div>
+                        </li>
+                    </ul>
+                </a>
+            </div><!-- //.ci_small -->
+            <div class="ci_small">
+                <a href="../store/store_main.html">
+                    <ul>
+                        <li><img src="../img/celeb_detail_img12.png" alt="비비쿠션"></li>
+                        <li class="body_article">
+                            <div>Momen 비비 쿠션</div>
+                            <div>#06 베이지</div>
+                        </li>
+                    </ul>
+                </a>
+            </div><!-- //.ci_small -->
+        </div><!-- //.ci_right -->
+    </div><!-- //.celeb_item -->
+
+    <div class="banner inner">
+        <a href="../subs/subs_main.html">
+            <div class="banner_text">
+                <div class="ad">
+                    트렌디한 나만의 매거진, <span>잡지</span> 구독하기
+                </div><!-- //.ad -->
+                <div class="by">
+                    월 13,000원으로 트렌드를 주도해봐요
+                </div>
+            </div><!-- //.banner_text -->
+            <span class="material-symbols-outlined right">
+                arrow_forward_ios
+            </span>
+            <div class="bannerimg">
+                <img src="../img/banner3.png" alt="배너">
+            </div><!-- //.bannerimg -->
+        </a>
+    </div><!-- //.banner -->
+
+    <div class="more inner">
+        <div class="more_title">
+            셀럽 애정템
+        </div><!-- //.more_title -->
+        <div class="more_contents">
+            <div class="more_small">
+                <a href="#">
+                    <ul>
+                        <li><img src="../img/celeb_detail_img13.png" alt="하윤"></li>
+                        <li class="name">
+                            110만 인플루언서 하윤의 애정템
+                        </li>
+                    </ul>
+                </a>
+            </div><!-- //.more_small -->
+            <div class="more_small">
+                <a href="#">
+                    <ul>
+                        <li><img src="../img/celeb_detail_img14.png" alt="나연"></li>
+                        <li class="name">
+                            나연의 촉촉한 광채 메이크업
+                        </li>
+                    </ul>
+                </a>
+            </div><!-- //.more_small -->
+            <div class="more_small no">
+                <a href="#">
+                    <ul>
+                        <li><img src="../img/celeb_detail_img15.png" alt="써니"></li>
+                        <li class="name">
+                            써니의 스모키 메이크업
+                        </li>
+                    </ul>
+                </a>
+            </div><!-- //.more_small -->
+        </div><!-- //.more_contents -->
+    </div><!-- //.more -->
+
+    <footer>
+        <div class="f_contents inner">
+            <div class="top">
+                <ul>
+                    <li><a href="#">고객센터</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">광고·제휴 문의</a></li>
+                    <li><a href="#">윤리경영</a></li>
+                </ul>
+            </div><!-- //.top -->
+            <div class="f_middle">
+                <div class="logo">
+                    <a href="../index.html">
+                        <img src="../img/footer_logo.png" alt="LaMUSE">
+                    </a>
+                </div><!-- //.logo -->
+                <div class="sns">
+                    <ul>
+                        <li><a href="#"><img src="../img/sns1.png" alt="instagram"></a></li>
+                        <li><a href="#"><img src="../img/sns2.png" alt="youtube"></a></li>
+                        <li><a href="#"><img src="../img/sns3.png" alt="facebook"></a></li>
+                    </ul>
+                </div><!-- //.sns -->
+            </div><!-- //.f_middle -->
+            <div class="copy">
+                © 2025 LaMUSE. All Rights Reserved.
+            </div><!-- //.copy -->
+        </div><!-- //.f_contents -->
+    </footer>
+</body>
+
+</html>

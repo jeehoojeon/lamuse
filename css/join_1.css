@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+
+
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0;
+    
+}
+
+.container .join_wrap {
+    width: 470px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.container .join_wrap .join_agree {
+    width: 100%;
+}
+
+.container .join_wrap .join_agree ul {
+    width: 100%;
+}
+
+
+
+
+.join_agree ul {}
+
+.join_agree ul li {
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border: 1px solid var(--grey40);
+    padding: 16px 16px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* 기본 체크박스 숨기기 */
+.join_agree input[type="checkbox"] {
+    display: none;
+}
+
+/* 사용자 정의 체크박스 디자인 */
+.join_agree label {
+    position: relative;
+    padding-left: 48px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.join_agree label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--w-color);
+    border-radius: 50%;
+    background: transparent;
+}
+
+/* 체크된 상태 스타일 */
+
+
+.join_agree input[type="checkbox"]:checked+label::after {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 14px;
+    height: 14px;
+    background: var(--w-color);
+    border-radius: 50%;
+}
+.agree_all .agree_all_box{
+    width: 100%;
+}
+
+.agree_all .agree_all_box label {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.agree_all p{
+    font-size: 16px;
+    font-weight: 300;
+    margin-left: 48px;
+    line-height: 1.3;
+    color: var(--grey20);
+}
+
+.agree_next{
+    width: 100%;
+    height: 53px;
+}
+
+.agree_next a{
+    width: 100%;
+    height: 100%;
+    background: var(--main-red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}

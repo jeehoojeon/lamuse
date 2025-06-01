@@ -1,0 +1,1034 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+/*   font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: italic; */
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../font/Pretendard-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../font/Pretendard-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../font/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../font/Pretendard-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../font/Pretendard-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../font/Pretendard-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sokcho';
+    src: url('../font/SokchoBadaBatang.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Eulyoo';
+    src: url('../font/Eulyoo1945-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Eulyoo';
+    src: url('../font/Eulyoo1945-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+:root {
+    --main-red: #AF040A;
+    --main-font: #1A1A1A;
+    --footer: #121212;
+    --chat: #E3E3E3;
+    --w-color: #FAFAFA;
+    --gold10: #F6F3F0;
+    --gold30: #DED6CE;
+    --gold50: #CBBDB0;
+    --gold70: #B9A593;
+    --gold90: #A68D76;
+    --gold100: #9D8167;
+    --lightbeige10: #F6F4F3;
+    --lightbeige30: #EFE9E4;
+    --lightbeige50: #E7DED6;
+    --lightbeige70: #DFD3C8;
+    --lightbeige90: #D8C8B9;
+    --lightbeige100: #D4C2B2;
+    --grey20: #CDCDCD;
+    --grey40: #A0A0A0;
+    --grey60: #747474;
+    --grey80: #474747;
+    --grey90: #212121;
+    --Pretendard: "Pretendard", serif;
+    --DM: "DM Serif Display", serif;
+    --Sokcho: "Sokcho", serif;
+    --Eulyoo: "Eulyoo", serif;
+
+    /*     --number-padding: 40px 0;
+    --list-padding: 50px 0;
+    --list-padding2: 40px 0;
+    --ul-gap: 24px;
+    --ul-gap2: 32px;
+    --banner-gap: 36px;
+    --list-padding-bottom: 80px;
+    --article-padding: 120px;
+
+    --web-title-gap: 36px;
+    --web-padding: 80px 0;
+
+    --tab-padding: 40px 0;
+    
+    --tab-title-gap: 83px 0; */
+
+    --number-padding: clamp(24px, 1.3vw + 12px, 100px) 0;
+    --list-padding: clamp(30px, 2vw + 10px, 50px) 0;
+    --list-padding2: clamp(24px, 1.5vw + 10px, 40px) 0;
+
+    --ul-gap: clamp(20px, 1.2vw + 6px, 24px);
+    --ul-gap2: clamp(20px, 1.6vw + 8px, 32px);
+    --banner-gap: clamp(20px, 1.7vw + 8px, 36px);
+    --list-padding-bottom: clamp(40px, 3vw + 20px, 80px);
+    --article-padding: clamp(60px, 5vw + 20px, 120px);
+
+    --web-title-gap: clamp(20px, 1.5vw + 10px, 36px);
+    --web-padding: clamp(40px, 3vw + 10px, 80px) 0;
+    --phone-padding: 20px 0;
+
+    --tab-padding: clamp(24px, 2vw + 8px, 40px) 0;
+    --phone-title-gap: 30px;
+    --title: clamp(28px, 2.5vw + 8px, 48px);
+    --body-font: clamp(18px, 1.5vw + 6px, 28px);
+    --tab-gap: 24px;
+    --phone-gap: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+::selection {
+    background-color: var(--lightbeige50);
+    color: var(--main-font);
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    /* overflow-x: hidden; */
+}
+
+body {
+    color: var(--w-color);
+    position: relative;
+    background: var(--main-font);
+    font-family: var(--Pretendard);
+    line-height: 1.3;
+}
+
+div img {
+    border-radius: 10px;
+}
+
+nav .logo img,
+footer .logo img {
+    border-radius: 0;
+}
+
+img {
+    object-fit: cover;
+}
+
+/* h1은 로고임~ */
+
+h2 {
+    font-size: 240px;
+    font-family: var(--DM);
+    color: var(--grey80);
+}
+
+h2.left {
+    left: 0;
+    top: 0
+}
+
+h2.right {
+    right: 0;
+    top: 0;
+}
+
+
+h3 {
+    font-size: 90px;
+    font-family: var(--DM);
+    font-style: italic;
+}
+
+h4 {
+    font-size: 55px;
+    font-family: var(--DM);
+    font-style: italic;
+
+}
+
+h5 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+h5.sokcho {
+    font-family: var(--Sokcho);
+    font-weight: 400;
+}
+
+h5 span {
+    font-family: var(--DM);
+    font-weight: 400;
+}
+
+h6 {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 120%;
+    /* 24px */
+    letter-spacing: -0.4px;
+}
+
+.subs_list {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.dm_n {
+    font-family: var(--DM);
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: -1.2px;
+}
+
+.mp_title {
+    font-family: var(--DM);
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.3;
+    border-bottom: 2px solid var(--w-color);
+    padding: 20px 0px;
+}
+
+.tag {
+    color: var(--gold90);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.3;
+    letter-spacing: -0.4px;
+}
+
+.tag_big {
+    font-size: 30px;
+    color: var(--gold90);
+    font-weight: 600;
+    line-height: 1.3;
+    letter-spacing: -0.4px;
+}
+
+/* 혹시모르니그냥두기 */
+
+.by {
+    color: var(--grey60);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.3;
+    letter-spacing: -0.4px;
+}
+
+.dark {
+    color: var(--main-font);
+}
+
+.body_article {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: -0.48px;
+}
+
+.body_article.b {
+    font-weight: 600;
+}
+
+.body_article span {
+    font-weight: 600;
+}
+
+.name {
+    font-weight: 400;
+    font-size: 28px;
+    letter-spacing: -0.56px;
+    line-height: 1.3;
+}
+
+.name.sokcho {
+    font-family: var(--Sokcho);
+    font-size: clamp(22px, 2.5vw, 28px);
+}
+
+.light_font {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.3;
+    /* 24px */
+    letter-spacing: -0.4px;
+}
+
+.light_font span {
+    font-weight: 600;
+}
+
+.light_font_b {
+    font-size: 24px;
+    line-height: 1.3;
+    /* 33.6px */
+    letter-spacing: -0.56px;
+    font-weight: 200;
+}
+
+.light_font_b span {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.medium {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+.medium_title {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+.button_subs_wrapper {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 80px;
+}
+
+.button_subs {
+    width: 281px;
+    height: 58px;
+    border-radius: 10px;
+    background: var(--main-red);
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.button_subs a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.none {
+    display: none;
+}
+
+.inner {
+    width: 1570px;
+    /* 모바일 343px, 웹 1570px 사이 동적 조정 */
+    margin: 0 auto;
+    /* padding: 0 20px; */
+    /* background: #ccc; */
+}
+
+.h3_text a {
+    display: flex;
+    gap: 36px;
+    align-items: center;
+}
+
+.h3_text a span {
+    font-size: 45px;
+}
+
+.chat_bot {
+    width: 361px;
+    height: 591px;
+    border-radius: 24px;
+    border: 1px solid var(--grey20);
+    background: var(--w-color);
+    flex-direction: column;
+    overflow: hidden;
+    color: var(--main-font);
+    position: fixed;
+    right: max(16px, calc((100% - 1570px) / 2));
+    z-index: -10;
+    bottom: 200px;
+    opacity: 0;
+    display: flex;
+    transition: 0.3s;
+}
+
+.chat_bot.on {
+    opacity: 1;
+    bottom: calc(175px + 2vw);
+    z-index: 100;
+}
+
+.chat_top {
+    flex: 1.2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 145%;
+    /* 20.3px */
+}
+
+.chat_body {
+    flex: 2.5;
+    width: 100%;
+    background: var(--chat);
+    position: relative;
+    padding: 18px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.chat_body .chat_time {
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    transform: translateX(-50%);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 145%;
+    /* 17.4px */
+    color: var(--grey40);
+}
+
+.chat_body .chat_to {
+    width: 220px;
+    height: 102px;
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    display: flex;
+    align-items: flex-end;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 145%;
+    /* 20.3px */
+}
+
+.chat_body .chat_to .chat_icon {
+    align-self: flex-start;
+}
+
+.chatting {
+    border-radius: 0px 10px 10px 10px;
+    background: var(--w-color);
+    display: inline-flex;
+    padding: 12px;
+    align-items: center;
+}
+
+.chat_body ul {
+    display: flex;
+    width: 224px;
+    padding: 4px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    border-radius: 10px 10px 0px 10px;
+    background: var(--lightbeige10);
+    color: var(--w-color);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 145%;
+    /* 26.1px */
+}
+
+.chat_body ul li {
+    width: 216px;
+    height: 50px;
+    border-radius: 10px;
+    background: var(--main-red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.chat_body ul li:first-child {
+    background: var(--grey90);
+}
+
+.chat_bottom {
+    flex: 0.5;
+    width: 100%;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 145%;
+    /* 26.1px */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+aside {
+    position: fixed;
+    right: max(16px, calc((100% - 1570px) / 2));
+    width: clamp(50px, 5vw, 60px);
+    /* 최소 40px, 5vw로 반응, 최대 60px */
+    height: clamp(50px, 5vw, 60px);
+    /* 최소 40px, 5vw로 반응, 최대 60px */
+    border-radius: 50%;
+    background: var(--w-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    color: var(--main-font);
+    border: 1px solid var(--grey20);
+}
+
+aside.chat {
+    bottom: calc(105px + 2vw);
+    /* 반응형 조정 */
+    cursor: pointer;
+}
+
+aside.up {
+    bottom: calc(35px + 2vw);
+    /* 반응형 조정 */
+}
+
+aside.up a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* fix */
+.fix {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    right: -100%;
+    /* on전에는 오른쪽으로 숨겨놨다가 on상황에는 자연스럽게 오도록 설정 */
+    top: 0;
+    display: flex;
+    transition: .3s;
+    background: var(--footer);
+    z-index: 100;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.fix::-webkit-scrollbar {
+    display: none; 
+}
+
+.fix .logo {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.fix.on {
+    right: 0;
+}
+
+.fix .gnb {
+    width: auto;
+    background: var(--footer);
+    display: flex;
+    /* gnb의 자식이 ul 하나뿐이니까 가운데정렬하려고 플렉스 적용 */
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 61px;
+}
+
+.fix .gnb>ul {
+    width: 80%;
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+    gap: 20px;
+}
+
+.fix .gnb>ul>li {
+    width: 807px;
+    height: 20%;
+    /* background: yellow; */
+    align-content: center;
+    /* flex를 설정하지 않아도 위아래 정렬이 display 블럭일 때 먹는다 */
+    transform: translateY(100px);
+    /* 밑에서 위로 올라오는 효과를 주기 위해 일단 밑으로 내림 */
+    transition: 0.3s;
+    /* transition-delay: 0.2s; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.fix.on .gnb>ul>li {
+    transform: translateY(0);
+}
+
+.fix .gnb>ul>li>a {
+    /* background: red; */
+    display: flex;
+    width: 28%;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.fix .gnb>ul>li>ul.sub {
+    font-size: 24px;
+    font-weight: 300;
+    display: flex;
+    width: 100%;
+    /* background: yellowgreen; */
+}
+
+.fix .gnb>ul>li>ul.sub li {
+    border-left: 1px solid var(--w-color);
+    padding-inline: 1rem;
+    /* margin block과 비슷한 속성. 가로가 인라인 세로가 블록이라 생각하면 됨 */
+}
+
+.fix .gnb>ul>li>ul.sub li a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    /* background: green; */
+}
+
+.fix .gnb>ul>li>ul.sub li:first-child {
+    border-left: none;
+    padding-inline-start: 0;
+}
+
+.fix .us {
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+.fix .us li {
+    height: 29px;
+    font-size: 16px;
+}
+
+.fix .sns {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 5%;
+    display: none;
+}
+
+
+/* nav */
+nav {
+    background: var(--footer);
+    width: 100%;
+    /* 반응형이라 height값 없애기...!!!! */
+}
+
+nav .inner {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    align-items: center;
+    height: auto;
+}
+
+.nav_top {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background: #ccc; */
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+.nav_top .nav_left {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.nav_right {
+    display: flex;
+    gap: 16px;
+    height: 48px;
+}
+
+.nav_right a.login {
+    align-self: center;
+}
+
+.nav_middle {
+    display: flex;
+    align-items: center;
+}
+
+.nav_middle .nav_right {
+    display: none;
+}
+
+.sel {
+    width: clamp(80px, 10vw, 80px);
+    height: 100%;
+    position: relative;
+}
+
+.sel p {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    position: relative;
+    z-index: 20;
+    background: var(--footer);
+}
+
+.sel p span {
+    transition: .6s;
+}
+
+.sel.on p span {
+    transform: rotate(180deg);
+}
+
+.sel ul {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    left: 0;
+    top: 0;
+    display: flex;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--main-font);
+    border: 1px solid var(--w-color);
+    border-radius: 10px;
+    align-items: center;
+    gap: 15px;
+    transition: 0.6s;
+    opacity: 0;
+}
+
+.sel.on ul {
+    opacity: 1;
+    top: 50px;
+}
+
+.login {
+    width: 126px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.login span {
+    font-size: 19px;
+    padding-bottom: 2.25px;
+}
+
+.nav_bottom {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_bottom .logo {
+    display: none;
+}
+
+.nav_bottom ul.gnb {
+    /* width: 764px; */
+    height: 100%;
+    display: flex;
+    font-size: 23px;
+}
+
+.nav_bottom ul.gnb>li {
+    /*     padding-left: 65px;
+    padding-right: 65px; */
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+
+
+.nav_bottom ul.gnb>li>a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 65px;
+    padding-right: 65px;
+}
+
+.nav_bottom ul.gnb>li::after {
+    content: '';
+    background: var(--main-red);
+    width: 100%;
+    height: 3px;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.2s;
+    transform: scale(0);
+}
+
+.nav_bottom ul.gnb>li:hover:after {
+    transform: scale(1);
+}
+
+.nav_bottom ul.gnb>li>ul.sub {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 70px;
+    z-index: 100;
+    font-size: 18px;
+    font-weight: 400;
+    display: none;
+}
+
+.nav_bottom ul.gnb>li>ul.sub li {
+    width: 100%;
+    background: rgba(26, 26, 26, 0.80);
+}
+
+.nav_bottom ul.gnb>li>ul.sub li:last-child {
+    border-radius: 0px 0px 10px 10px;
+}
+
+.nav_bottom ul.gnb>li>ul.sub li a {
+    display: flex;
+    width: 100%;
+    height: 45px;
+    /* 임시임 */
+    justify-content: center;
+    align-items: center;
+}
+
+.nv_right {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+}
+
+.nv_right .ham {
+    display: none;
+    cursor: pointer;
+    z-index: 150;
+    position: relative;
+    width: auto;
+    height: auto;
+    margin-right: 38px;
+}
+
+.nv_right .ham span {
+    font-size: 40px;
+    position: absolute;
+/*     left: 50%;
+    top: 50%; */
+    transform: translate(-50%, -50%);
+}
+
+/* 기본 상태: 메뉴 아이콘 보임, X 아이콘 숨김 */
+.ham .menu {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.nv_right .ham .x {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    position: fixed;
+}
+
+.search {
+    width: clamp(82px, 23.125vw, 350px);
+    height: 45px;
+    background: #2a2a2a;
+    position: relative;
+    display: flex;
+    gap: 11px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0 20px;
+}
+
+.search input {
+    background: none;
+    border: 0;
+    outline: 0;
+    width: 80%;
+    font-size: 16px;
+    color: var(--w-color);
+}
+
+.search input::placeholder {
+    color: var(--grey60);
+}
+
+.search a {
+    display: flex;
+    width: auto;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.search a span {
+    font-size: 30px;
+}
+
+
+/* footer */
+footer {
+    width: 100%;
+    background: var(--footer);
+}
+
+footer .f_contents {
+    height: 100%;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+footer .top {
+    height: 34px;
+}
+
+footer .top ul {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    /* background: #ccc; */
+}
+
+footer .top ul li {
+    height: 100%;
+    padding: 5px clamp(40px, 5vw, 80px);
+    /* 최소 40px, 5vw로 반응, 최대 80px */
+    border-right: 1px solid var(--grey60);
+}
+
+footer .top ul li:last-child {
+    border-right: 0;
+}
+
+footer .top ul li a {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .f_middle {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    gap: 50px;
+    align-items: flex-end;
+    padding-bottom: 50px;
+}
+
+.sns ul {
+    align-items: center;
+    display: flex;
+    gap: clamp(20px, 5vw, 40px);
+    /* 최소 20px, 5vw로 반응, 최대 40px */
+}
+
+
+.sns ul li {
+    width: auto;
+    /* li 너비 제한 */
+}
+
+footer .copy {
+    color: var(--grey40);
+    padding: 25px 0;
+}
